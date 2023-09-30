@@ -34,6 +34,28 @@
 
 Очень эффективный. Они были очень дешевы и просты в производстве по сравнению с классической артиллерией, поэтому их можно было быстро использовать в больших количествах. Это была одна из составляющих их эффективности.
 
+### Какая польза от Катюши?
+
+Использование системы залпового огня MRLS или, другими словами, безудержной пусковой установки с несколькими сообщениями, используемой для бомбардировки чатов групп сообщений, серверов Discord, чатов Snapchat, групповых чатов Telegram путем отправки изображений из папки Windows.
+
+### Как использовать Катюшу? 
+
+Чтобы использовать «Катюшу», у вас должна быть папка, полная изображений, которые вы хотите отправить.
+
+У вас есть 2 режима:
+
+Обычный: от первого до последнего/по алфавитному типу запуска.
+
+Случайный: запуск осуществляется в случайном порядке путем выбора случайных файлов из выбранной вами папки.
+
+Другие функции:
+
+Автоматизация: автоматизируйте запуск ракет, отправляя такие клавиши, как: Ctrl + V + Enter, чтобы облегчить бомбардировку.
+
+Таймер: если вы хотите запустить запуск через определенное время, вы можете изменить его продолжительность.
+
+Чтобы узнать больше, просто запустите Katyusha.exe, чтобы увидеть меню справки.
+
 ----------------
 
 #### Eng (American)
@@ -66,3 +88,25 @@ Katyusha-like MRLs were also allegedly used by the Rwandan Patriotic Front durin
 ### How affective was Katyusha in World War 2?
 
 Very effective. They were very cheap and easy to manufacture compared to classical artillery, so they could be quickly fielded in large numbers. That was one part to their efficiency.
+
+### What is the use of Katyusha?
+
+The Use of MRLS Multiple Rocket Launcher System, or in other words a Multiple Message Rampant Launcher, used to Bombard Messenger Groups Chats, Discord Servers, Snapchat Chats, Telegram Group Chats, By sending Images from your Windows Folder.
+
+### How do I use Katyusha?
+
+To use Katyusha, You must have a folder full of images you want to send.
+
+You have 2 modes: 
+
+Normal : First to last / By Alphabet type of Launch.
+
+Random : Randomizes Launch by picking random files from the folder you select.
+
+Other Functions:
+
+Automate : Automate the launching of rockets, by sending Keys like: Ctrl + V + Enter, to make it easier to bombard.
+
+Timer : If you want to launch in a specific amount of time, you can change on how long it lasts.
+
+To know more, simply run Katyusha.exe to see the help menu.
