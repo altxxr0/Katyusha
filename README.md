@@ -38,7 +38,7 @@
 
 #### Eng (American)
 
-**Katyusha**, Dubbed as Multiple Rocket Launcher (MRL)
+**Katyusha**, Dubbed as Multiple Rocket Launcher System (MRLS)
 
 Uses Payloads (Images) like ".png, .jpeg, .jpg, .gif, .apng"
 it allows you to copy images in a directory to your clipboard.
