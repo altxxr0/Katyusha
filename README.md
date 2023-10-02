@@ -36,6 +36,8 @@ Katyusha, a Soviet rocket artillery system, is known for its mobility, simplicit
 6. **Психологический эффект:** Громкий шум и непредсказуемая область поражения оказывали значительное психологическое воздействие на
 вражеские войска.
 
+----------------
+
 #### **EN-2:1**
 
 Problems of Katyusha that we plan to Remove / Mediate in order to improve the Katyusha even more.
@@ -85,3 +87,15 @@ Despite these disadvantages, Katyusha rocket launchers were effective weapons fo
 9. **Ограниченная мобильность в сложных местностях:** Установки Катюши, устанавливаемые на грузовиках, могли быть менее подвижными в сложных или недоступных местностях.
 
 Несмотря на эти недостатки, ракетные установки Катюши были эффективным оружием для своей задачи во время Второй мировой войны и других конфликтов. Они преуспевали в создании насыщенного огневого удара в широкой области и разрушении позиций противника, что делало их ценными средствами на поле боя.
+
+----------------
+
+#### EN-3:1
+
+![image](https://github.com/anarchounidos/Katyusha/assets/94430800/401a1390-4e75-4fde-b9d3-129a1c3b7bef)
+
+Katyusha, as an application is used for Psychological Use to barrage Group Chats, Discord Servers, Telegram Groups, and can also be used on other messaging services that have No Message Moderation, It uses Ammountion, like Images (.png / .jpg / .jpeg / .apng / .gif), By Continously Copying an Image from your Payload Folder, and in-turn making it far easier to Barrage.
+
+#### RU-3:1
+
+Катюша, как приложение, используется для психологического использования для блокировки групповых чатов, серверов Discord, групп Telegram, а также может использоваться в других службах обмена сообщениями, у которых нет модерации сообщений. Оно использует Ammountion, например изображения (.png / .jpg / . jpeg / .apng / .gif), путем постоянного копирования изображения из папки полезных данных и, в свою очередь, значительно упрощающего обстрел.
