@@ -4,11 +4,11 @@
 ----------------
 Reference:
 
-- Katyusha's Advantage: [EN](https://github.com/anarchounidos/Katyusha/blob/main/README.md#en-11) [RU](https://github.com/anarchounidos/Katyusha/blob/main/README.md#ru-11)
+- Katyusha's Advantage: [(EN)](https://github.com/anarchounidos/Katyusha/blob/main/README.md#en-11) | [(RU)](https://github.com/anarchounidos/Katyusha/blob/main/README.md#ru-11)
 
-- Katyusha's Disadvantage: [EN](https://github.com/anarchounidos/Katyusha/blob/main/README.md#en-21) [RU](https://github.com/anarchounidos/Katyusha/blob/main/README.md#ru-21)
+- Katyusha's Disadvantage: [(EN)](https://github.com/anarchounidos/Katyusha/blob/main/README.md#en-21) | [(RU)](https://github.com/anarchounidos/Katyusha/blob/main/README.md#ru-21)
 
-- Katyusha is Made For: [EN](https://github.com/anarchounidos/Katyusha/blob/main/README.md#en-31) [RU](https://github.com/anarchounidos/Katyusha/blob/main/README.md#ru-31)
+- Katyusha is Made For: [(EN)](https://github.com/anarchounidos/Katyusha/blob/main/README.md#en-31) | [(RU)](https://github.com/anarchounidos/Katyusha/blob/main/README.md#ru-31)
 
 ----------------
 ## Катюша Katyusha // User Manual
