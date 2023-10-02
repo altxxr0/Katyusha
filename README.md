@@ -2,6 +2,13 @@
 ![Katyusha](https://github.com/anarchounidos/Katyusha/assets/94430800/e78cea73-bc72-46d2-8f96-f6b91ec2f65a)
 
 ----------------
+Reference:
+[Katyusha's Advantage]()
+[Katyusha's Disadvantage]()
+[Katyusha is Made For]()
+
+----------------
+## Катюша Katyusha // User Manual
 
 #### **EN-1:1**
 
