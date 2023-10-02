@@ -3,7 +3,7 @@
 
 ----------------
 
-#### **English Version:**
+#### **EN-1:1**
 
 Katyusha, a Soviet rocket artillery system, is known for its mobility, simplicity, and the ability to deliver a large number of rockets over a wide area. Its key features include:
 
@@ -19,7 +19,7 @@ Katyusha, a Soviet rocket artillery system, is known for its mobility, simplicit
 
 6. **Psychological Impact:** The loud noise and unpredictable impact area had a significant psychological effect on enemy troops.
 
-#### **Russian Version:**
+#### **RU-1:1**
 
 Катюша, советская система реактивной артиллерии, известна своей подвижностью, простотой и способностью доставлять большое количество ракет в широкой области. Ее основные характеристики включают:
 
@@ -36,7 +36,7 @@ Katyusha, a Soviet rocket artillery system, is known for its mobility, simplicit
 6. **Психологический эффект:** Громкий шум и непредсказуемая область поражения оказывали значительное психологическое воздействие на
 вражеские войска.
 
-#### **English Version:**
+#### **EN-2:1**
 
 Problems of Katyusha that we plan to Remove / Mediate in order to improve the Katyusha even more.
 While Katyusha rocket launchers had several advantages, they also had notable disadvantages, which include:
@@ -61,7 +61,7 @@ While Katyusha rocket launchers had several advantages, they also had notable di
 
 Despite these disadvantages, Katyusha rocket launchers were effective weapons for their intended purpose during World War II and other conflicts. They excelled at saturating large areas with firepower and disrupting enemy positions, making them valuable assets on the battlefield.
 
-#### **Russian Version:**
+#### **RU-2:1**
 
 Проблемы Катюши, которые мы планируем Убрать/Урегулировать, чтобы еще больше улучшить Катюшу.
 Хотя ракетные установки «Катюша» имели ряд преимуществ, они также имели заметные недостатки, к которым относятся:
@@ -70,7 +70,7 @@ Despite these disadvantages, Katyusha rocket launchers were effective weapons fo
 
 2. **Ограниченная дальность:** Дальность полета ракет Катюши оставала желать лучшего по сравнению с более современными артиллерийскими и ракетными системами. Это ограничение делало их менее эффективными против дальних или укрепленных целей.
 
-3. **Короткий срок службы в боевом режиме:** Установки Катюши имели ограниченное количество ракет, которые они могли выпустить перед необходимостью перезарядки. После исчерпания запаса ракет требовалась перезаправка, что занимало время и ресурсы.
+3. ~Короткий срок службы в боевом режиме: Установки Катюши имели ограниченное количество ракет, которые они могли выпустить перед необходимостью перезарядки. После исчерпания запаса ракет требовалась перезаправка, что занимало время и ресурсы.~
 
 4. **Уязвимость во время стрельбы:** При стрельбе ракеты Катюши становились временно неподвижными, что делало их уязвимыми для ответных артобстрелов со стороны артиллерии противника или авиационных ударов.
 
