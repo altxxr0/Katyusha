@@ -3,9 +3,12 @@
 
 ----------------
 Reference:
-[Katyusha's Advantage]()
-[Katyusha's Disadvantage]()
-[Katyusha is Made For]()
+
+[Katyusha's Advantage](https://github.com/anarchounidos/Katyusha/blob/main/README.md#en-11) [Преимущество Катюши](https://github.com/anarchounidos/Katyusha/blob/main/README.md#ru-11)
+
+[Katyusha's Disadvantage](https://github.com/anarchounidos/Katyusha/blob/main/README.md#en-21) [Недостаток Катюши](https://github.com/anarchounidos/Katyusha/blob/main/README.md#ru-21)
+
+[Katyusha is Made For](https://github.com/anarchounidos/Katyusha/blob/main/README.md#en-31) [Катюша создана для](https://github.com/anarchounidos/Katyusha/blob/main/README.md#ru-31)
 
 ----------------
 ## Катюша Katyusha // User Manual
