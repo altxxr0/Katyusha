@@ -40,11 +40,11 @@ Problems of Katyusha that we plan to Remove / Mediate in order to improve the Ka
 
 While Katyusha rocket launchers had several advantages, they also had notable disadvantages, which include:
 
-1. ~Lack of Precision:~ Katyusha rockets were relatively inaccurate compared to modern guided missile systems or artillery. Their lack of precision meant that they were better suited for area saturation rather than pinpoint targeting.
+1. ~Lack of Precision: Katyusha rockets were relatively inaccurate compared to modern guided missile systems or artillery. Their lack of precision meant that they were better suited for area saturation rather than pinpoint targeting.~
 
 2. **Limited Range:** The range of Katyusha rockets was limited compared to more modern artillery and missile systems. This limitation made them less effective against distant or fortified targets.
 
-3. ~Shorter Effective Lifespan:~ Katyusha launchers had a limited number of rockets they could fire before needing reloading. Once they expended their rockets, they needed to be resupplied, which required time and resources.
+3. ~Shorter Effective Lifespan: Katyusha launchers had a limited number of rockets they could fire before needing reloading. Once they expended their rockets, they needed to be resupplied, which required time and resources.~
 
 4. **Exposure During Firing:** When firing, Katyusha launchers became briefly stationary, making them vulnerable to counter-battery fire from enemy artillery or airstrikes.
 
@@ -54,7 +54,7 @@ While Katyusha rocket launchers had several advantages, they also had notable di
 
 7. **Limited Warhead Types:** Katyusha rockets typically carried high-explosive warheads, limiting their versatility compared to systems with a variety of specialized munitions.
 
-8. ~Maintenance Requirements:~ Like all military equipment, Katyusha launchers required maintenance and could break down, potentially reducing their operational readiness.
+8. **Maintenance Requirements (Updates)**: Like all military equipment, Katyusha launchers required maintenance and could break down, potentially reducing their operational readiness.
 
 9. **Limited Mobility in Certain Terrains:** Katyusha launchers, being mounted on trucks, could be restricted in their mobility in rough or difficult terrains.
 
