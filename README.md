@@ -1,4 +1,4 @@
-# Катюша Katyusha / Ⓐnarcho
+# Катюша Katyusha / (A)narchoUnidos
 ![Katyusha](https://github.com/anarchounidos/Katyusha/assets/94430800/e78cea73-bc72-46d2-8f96-f6b91ec2f65a)
 
 ----------------
