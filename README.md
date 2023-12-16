@@ -34,3 +34,40 @@
                                			\\ █▄▀ ▄▀█ ▀█▀ █▄█ █ █ █▀ █ █ ▄▀█ //
                                			// █ █ █▀█  █   █  █▄█ ▄█ █▀█ █▀█ \\
 ```
+### Katyusha
+Multiple Rocket Launcher System / Multiple Payload Launcheer System
+
+### Description:
+Katyusha, Multiple Paylosd DDoS Software, that uses images / gif files as Payloads in-order to flood a Group Chat / Discord Server with Messages and Images.
+
+### Disclaimer:
+This software's intent varies as it is to benifit for both parties, and as such we are not responsible for any damages caused by User(s) / by Katyusha, as users are aware that it can be used for malicious intent and security purposes.
+
+### Documentary:
+https://youtu.be/cl0jjXeXbmw
+
+### Details:
+It is proclaimed as a Multiple Rocket Launcher System, nicknamed by the Germans as the Stalin Organ, like Russia's MRLS Katyusha was designed to "demoralize" nearby units, but it has also inflicted a psychological effect both those who are targeted and those who operated it.
+
+Though it is Very Inaccurate for precise targets or even missing them, Katyusha's are easily deployable and be relocated with ease, easy to produce, and would be hell if their are multiple Katyusha's are used, due to poor precision the Katyusha is not able to penetrate covered areas, and can only hit exposed unit(s) / Infastructure only by chance, and can sometiems be easily be detectable.
+
+### Payloads:
+- V1 Rockets
+ - Text / BM-8 (Light)
+ - Normal / BM-13
+ - Random / BM-14
+- V2 Rockets
+ - Fragment / BM-21 (Lag)
+ - / BM-24
+- V3 Rockets
+ - Hosted / BM-31
+
+### Features:
+- Timer
+- Minimizer
+
+
+### Credits:
+- Altxxr : Maintaining and Continuing Katyusha | Project Genesis
+- Anarcho : Developing and Creating Katyusha
+- Lazygrinds : For giving the idess, and the suggestion for the name.
