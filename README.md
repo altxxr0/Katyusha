@@ -44,8 +44,11 @@ Katyusha, Multiple Paylosd DDoS Software, that uses images / gif files as Payloa
 This software's intent varies as it is to benifit for both parties, and as such we are not responsible for any damages caused by User(s) / by Katyusha, as users are aware that it can be used for malicious intent and security purposes.
 
 ### Documentary:
-<video src="https://www.youtube.com/embed/cl0jjXeXbmw?si=xSxvp1Q8aoaPLkWn"></video>
+
+https://github.com/ProjectArmageddon/Katyusha/raw/main/Documentation.mp4
+
 https://www.youtube.com/embed/cl0jjXeXbmw?si=xSxvp1Q8aoaPLkWn
+
 ### Details:
 It is proclaimed as a Multiple Rocket Launcher System, nicknamed by the Germans as the Stalin Organ, like Russia's MRLS Katyusha was designed to "demoralize" nearby units, but it has also inflicted a psychological effect both those who are targeted and those who operated it.
 
