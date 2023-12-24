@@ -37,7 +37,7 @@
 ## Katyusha
 Multiple Rocket Launcher System / Multiple Payload Launcheer System
 
-### Description 📜:
+## Description 📜:
 Katyusha, Multiple Paylosd DDoS Software, that uses images / gif files as Payloads in-order to flood a Group Chat / Discord Server with Messages and Images.
 
 ### Disclaimer ⚠:
@@ -48,7 +48,7 @@ It is proclaimed as a Multiple Rocket Launcher System, nicknamed by the Germans 
 
 Though it is Very Inaccurate for precise targets or even missing them, Katyusha's are easily deployable and be relocated with ease, easy to produce, and would be hell if their are multiple Katyusha's are used, due to poor precision the Katyusha is not able to penetrate covered areas, and can only hit exposed unit(s) / Infastructure only by chance, and can sometiems be easily be detectable.
 
-### Download 🔻:
+## Download 🔻:
 Why is it [adfoc.us](http://adfoc.us/70081799483219)? This is so we can continue Developing Katyusha and Project Armageddon, Don't worry It's way Better than Linkvertise!
 But.. If you don't want to do that, You can Clone / Download the repository and Build the Application yourself if you don't like to wait,
 
