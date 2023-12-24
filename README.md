@@ -66,7 +66,7 @@ Though it is Very Inaccurate for precise targets or even missing them, Katyusha'
 
 ### Credits 👏:
   - Developers 🖥:
-   	- [Anarcho](https://github.com/Anarcho) : Original Developer | Developing and Creating the Original Katyusha, No longer active
+   	- [Anarcho](https://github.com/Anarcho) : Original Developer | Developing and Creating the Original Katyusha, **(No longer active)**
    	- [Altxxr](https://github.com/Altxxr) : Developer | Maintaining and Continuing Katyusha { Project (Genesis) -> Armageddon }
    	- [JamAdventurer](https://github.com/jamadventurer) : Developer, Support / Bug Tracker
   - Special Thanks 🤍:
