@@ -49,25 +49,65 @@ It is proclaimed as a Multiple Rocket Launcher System, nicknamed by the Germans 
 Though it is Very Inaccurate for precise targets or even missing them, Katyusha's are easily deployable and be relocated with ease, easy to produce, and would be hell if their are multiple Katyusha's are used, due to poor precision the Katyusha is not able to penetrate covered areas, and can only hit exposed unit(s) / Infastructure only by chance, and can sometiems be easily be detectable.
 
 ### Payloads 🚀:
-- V1 Rockets
- - Text / BM-8 (Light)
- - Normal / BM-13
- - Random / BM-14
-- V2 Rockets
- - Fragment / BM-21 (Lag)
- - / BM-24
-- V3 Rockets
- - Hosted / BM-31
+		<< Katyusha >> 
+    Usage: Katyusha.exe [directory] [mode] [options]
+                                  \ [mode] [options]
 
+    Mode(s):
+
+      v1 Rockets:
+
+        text / BM-8                 : Uses Text Only. 
+
+                                      Uses a text file from the directory
+        [mode] [directory] [options]  if you dont have a directory it will
+        text (c:\my\directory\)       use the second argument as a Text and
+        bm-8 @everyone My Text!       if not it will default to your current
+                                      clipboard.
+        
+        normal / BM-13              : Uses Images / Gif Files.
+
+        [directory] [mode] [options]  Uses images / gif files in the specified
+        normal (c:\my\directory)      directory, and will go through them top-bottom
+        bm-13 (c:\my\directory)                                    
+
+        random / BM-18              : Uses Images / Gif files in random order.
+
+        [directory] [mode] [options]  Randomizing the image will prevent any duplicates
+        random (c:\my\directory)      from making an appearance will improve efficiency
+        bm-18 (c:\my\directory)
+
+      v2 Rockets:
+        
+        grad / BM-21                : Uses Destructive Text.
+
+        [mode] [int] [options]        Grad has improved destructiveness as the decendant
+        grad 100                      of BM-8, Uses Bloated Unicode Text, It requires the
+        bm-21 2100                    total number of text it will produce [int].
+
+        uragan / BM-27              : Uses Destructive Images.
+
+                                      Uragan Corrupts/Image Vortex/Image Crash the Image to
+                                      the target in-order to crash the clients in the group.
+
+      v3 Rockets:
+
+        smerch / BM-30              : Uses sophisticated local image hosting to send to target
+                                    [ Warning: Use VPN / Dynamic IP to change after an attack  ]
+                                    [ This to prevent YOU from being DDoS'ed Because it uses   ]
+                                    [ Your Local/Current IP, This needs to use your IP to work ] 
+
+        [directory] [mode] [options]  Uragan a more destructive child of BM-13 and BM-18
+        uragan (c:\my\directory)      Uses Images and tries to make it stretch to the
+        bm-18 (c:\my\directory)       Highest limits.
 ### Features 🔺:
 - Timer
 - Minimizer
 
-
 ### Credits 👏:
   - Developers 🖥:
    	- [Anarcho](https://github.com/Anarcho) : Original Developer | Developing and Creating the Original Katyusha, **(No longer active)**
-   	- [Altxxr](https://github.com/Altxxr) : Developer | Maintaining and Continuing Katyusha { Project (Genesis) -> Armageddon }
+   	- [Altxxr](https://github.com/Altxxr) : Developer | Maintaining and Continuing Katyusha **{ Project (Genesis) -> Armageddon }**
    	- [JamAdventurer](https://github.com/jamadventurer) : Developer, Support / Bug Tracker
   - Special Thanks 🤍:
    	- [Lazygrinds](https://www.roblox.com/users/2835123653/profile) : For giving the ideas for the features, uses, and the suggestion for the name.
