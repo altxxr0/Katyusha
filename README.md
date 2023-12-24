@@ -66,8 +66,8 @@ Though it is Very Inaccurate for precise targets or even missing them, Katyusha'
 
 ### Credits 👏:
   - Developers 🖥:
-   	- Anarcho : Original Developer | Developing and Creating the Original Katyusha
-   	- Altxxr : Developer | Maintaining and Continuing Katyusha { Project (Genesis) -> Armageddon }
-   	- JamAdventurer : Developer, Support / Bug Tracker
+   	- [Anarcho](https://github.com/Anarcho) : Original Developer | Developing and Creating the Original Katyusha, No longer active
+   	- [Altxxr](https://github.com/Altxxr) : Developer | Maintaining and Continuing Katyusha { Project (Genesis) -> Armageddon }
+   	- [JamAdventurer](https://github.com/jamadventurer) : Developer, Support / Bug Tracker
   - Special Thanks 🤍:
-   	- Lazygrinds : For giving the idess, and the suggestion for the name.
+   	- [Lazygrinds](https://www.roblox.com/users/2835123653/profile) : For giving the ideas for the features, uses, and the suggestion for the name.
