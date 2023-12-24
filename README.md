@@ -34,7 +34,7 @@
                                			\\ █▄▀ ▄▀█ ▀█▀ █▄█ █ █ █▀ █ █ ▄▀█ //
                                			// █ █ █▀█  █   █  █▄█ ▄█ █▀█ █▀█ \\
 ```
-![GitHub issues](https://img.shields.io/github/issues/ProjectArmageddon/Katyusha) ![GitHub closed issues](https://img.shields.io/github/issues-closed/Armageddon/Katyusha) ![GitHub pull requests](https://img.shields.io/github/issues-pr/Armageddon/Katyusha) ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/Armageddon/Katyusha)
+![GitHub issues](https://img.shields.io/github/issues/ProjectArmageddon/Katyusha) ![GitHub closed issues](https://img.shields.io/github/issues-closed/ProjectArmageddon/Katyusha) ![GitHub pull requests](https://img.shields.io/github/issues-pr/ProjectArmageddon/Katyusha) ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/ProjectArmageddon/Katyusha)
 
 ## Katyusha
 Multiple Rocket Launcher System / Multiple Payload Launcher System
