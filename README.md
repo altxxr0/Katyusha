@@ -35,7 +35,7 @@
                                			// █ █ █▀█  █   █  █▄█ ▄█ █▀█ █▀█ \\
 ```
 ## Katyusha
-Multiple Rocket Launcher System / Multiple Payload Launcheer System
+Multiple Rocket Launcher System / Multiple Payload Launcher System
 
 ## Description 📜:
 Katyusha, Multiple Paylosd DDoS Software, that uses images / gif files as Payloads in-order to flood a Group Chat / Discord Server with Messages and Images.
