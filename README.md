@@ -37,24 +37,18 @@
 ## Katyusha
 Multiple Rocket Launcher System / Multiple Payload Launcheer System
 
-### Description:
+### Description 📜:
 Katyusha, Multiple Paylosd DDoS Software, that uses images / gif files as Payloads in-order to flood a Group Chat / Discord Server with Messages and Images.
 
-### Disclaimer:
+### Disclaimer ⚠:
 This software's intent varies as it is to benifit for both parties, and as such we are not responsible for any damages caused by User(s) / by Katyusha, as users are aware that it can be used for malicious intent and security purposes.
 
-### Documentary:
-
-https://github.com/ProjectArmageddon/Katyusha/assets/94430800/299e2761-2da6-4b06-872c-17246bbb55fc
-
-https://www.youtube.com/embed/cl0jjXeXbmw?si=xSxvp1Q8aoaPLkWn
-
-### Details:
+### Details 📋:
 It is proclaimed as a Multiple Rocket Launcher System, nicknamed by the Germans as the Stalin Organ, like Russia's MRLS Katyusha was designed to "demoralize" nearby units, but it has also inflicted a psychological effect both those who are targeted and those who operated it.
 
 Though it is Very Inaccurate for precise targets or even missing them, Katyusha's are easily deployable and be relocated with ease, easy to produce, and would be hell if their are multiple Katyusha's are used, due to poor precision the Katyusha is not able to penetrate covered areas, and can only hit exposed unit(s) / Infastructure only by chance, and can sometiems be easily be detectable.
 
-### Payloads:
+### Payloads 🚀:
 - V1 Rockets
  - Text / BM-8 (Light)
  - Normal / BM-13
@@ -65,12 +59,15 @@ Though it is Very Inaccurate for precise targets or even missing them, Katyusha'
 - V3 Rockets
  - Hosted / BM-31
 
-### Features:
+### Features 🔺:
 - Timer
 - Minimizer
 
 
-### Credits:
-- Altxxr : Maintaining and Continuing Katyusha | Project Genesis
-- Anarcho : Developing and Creating Katyusha
-- Lazygrinds : For giving the idess, and the suggestion for the name.
+### Credits 👏:
+  Developers 🖥:
+   - Anarcho : Original Developer | Developing and Creating the Original Katyusha
+   - Altxxr : Developer | Maintaining and Continuing Katyusha { Project (Genesis) -> Armageddon }
+   - JamAdventurer : Developer, Support / Bug Tracker
+  Special Thanks 🤍:
+   - Lazygrinds : For giving the idess, and the suggestion for the name.
