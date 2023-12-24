@@ -50,6 +50,8 @@ Though it is Very Inaccurate for precise targets or even missing them, Katyusha'
 
 ### Download 🔻:
 Why is it [adfoc.us](http://adfoc.us/70081799483219)? This is so we can continue Developing Katyusha and Project Armageddon, Don't worry It's way Better than Linkvertise!
+But.. If you don't want to do that, You can Clone / Download the repository and Build the Application yourself if you don't like to wait,
+
 #### Confused? Press the Skip Button in the Upper Right Corner (It is almost blended into the Background)
 
 - [v9.12.2023.0](http://adfoc.us/70081782434898)
