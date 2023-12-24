@@ -100,9 +100,25 @@ Though it is Very Inaccurate for precise targets or even missing them, Katyusha'
         [directory] [mode] [options]  Uragan a more destructive child of BM-13 and BM-18
         uragan (c:\my\directory)      Uses Images and tries to make it stretch to the
         bm-18 (c:\my\directory)       Highest limits.
+
 ### Features 🔺:
 - Timer
 - Minimizer
+
+### License 📃:
+ █─▄▄▄─█─▄▄▄─███▄─▄─▀█▄─█─▄█▀▀▀▀▀██▄─▀█▄─▄█─▄▄▄─███░█░██████─▄▄─█
+ █─███▀█─███▀████─▄─▀██▄─▄██████████─█▄▀─██─███▀███▄▄░██░░██─██─█
+ ▀▄▄▄▄▄▀▄▄▄▄▄▀▀▀▄▄▄▄▀▀▀▄▄▄▀▀▀▀▀▀▀▀▀▄▄▄▀▀▄▄▀▄▄▄▄▄▀▀▀▀▄▄▄▀▄▄▀▀▄▄▄▄▀
+ 	    Attribution-NonCommercial 4.0 International
+
+	You are free to:
+		Share — copy and redistribute the material in any medium or format
+		Adapt — remix, transform, and build upon the material
+			The licensor cannot revoke these freedoms as long as you follow the license terms.
+	Under the following terms:
+		Attribution — You must give appropriate credit , provide a link to the license, and indicate if changes were made . You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+		NonCommercial — You may not use the material for commercial purposes .
+		No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
 
 ### Credits 👏:
   - Developers 🖥:
