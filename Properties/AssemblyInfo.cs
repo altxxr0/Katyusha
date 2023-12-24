@@ -70,9 +70,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Katyusha")]
 [assembly: AssemblyDescription("Multiple Rocket Launcher System")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("AnarchoUnidos")]
+[assembly: AssemblyCompany("ProjectArmageddon")]
 [assembly: AssemblyProduct("Katyusha MRLS")]
-[assembly: AssemblyCopyright("Copyright © AnarchoUnidos 2023")]
+[assembly: AssemblyCopyright("Copyright © ProjectArmageddon 2023")]
 [assembly: AssemblyTrademark("Katyusha MRLS")]
 [assembly: AssemblyCulture("")]
 
