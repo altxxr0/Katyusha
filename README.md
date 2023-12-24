@@ -110,8 +110,8 @@ Though it is Very Inaccurate for precise targets or even missing them, Katyusha'
  █─▄▄▄─█─▄▄▄─███▄─▄─▀█▄─█─▄█▀▀▀▀▀██▄─▀█▄─▄█─▄▄▄─███░█░██████─▄▄─█
  █─███▀█─███▀████─▄─▀██▄─▄██████████─█▄▀─██─███▀███▄▄░██░░██─██─█
  ▀▄▄▄▄▄▀▄▄▄▄▄▀▀▀▄▄▄▄▀▀▀▄▄▄▀▀▀▀▀▀▀▀▀▄▄▄▀▀▄▄▀▄▄▄▄▄▀▀▀▀▄▄▄▀▄▄▀▀▄▄▄▄▀
- 
- 	    Attribution-NonCommercial 4.0 International
+
+ #### Attribution-NonCommercial 4.0 International
 
 	You are free to:
 		Share — copy and redistribute the material in any medium or format
