@@ -105,6 +105,9 @@ Though it is Very Inaccurate for precise targets or even missing them, Katyusha'
 - Timer
 - Minimizer
 
+### Contribution 🤝:
+Feel Free to contribute to the project, via [Pull Requests 🌿](https://github.com/ProjectArmageddon/Katyusha/pulls) or if you want a feature/idea you want to share to make Katyusha better use [Issues 🗣](https://github.com/ProjectArmageddon/Katyusha/issues).
+
 ### License 📃:
 
  █─▄▄▄─█─▄▄▄─███▄─▄─▀█▄─█─▄█▀▀▀▀▀██▄─▀█▄─▄█─▄▄▄─███░█░██████─▄▄─█
@@ -126,6 +129,9 @@ Though it is Very Inaccurate for precise targets or even missing them, Katyusha'
   - Developers 🖥:
    	- [Anarcho](https://github.com/Anarcho) : Original Developer | Developing and Creating the Original Katyusha, **(No longer active)**
    	- [Altxxr](https://github.com/Altxxr) : Developer | Maintaining and Continuing Katyusha **{ Project (Genesis) -> Armageddon }**
-   	- [JamAdventurer](https://github.com/jamadventurer) : Developer, Support / Bug Tracker
+   	- [JamAdventurer](https://github.com/jamadventurer) : Co-Developer | Support / Bug Tracker
   - Special Thanks 🤍:
    	- [Lazygrinds](https://www.roblox.com/users/2835123653/profile) : For giving the ideas for the features, uses, and the suggestion for the name.
+
+### Other Information ℹ:
+For Those who are wondering Katyusha is a Passed Down Project to me, and me and [@JamAdventurer](https://github.com/jamadventurer) are Maintaining and Improving on Katyusha and Armageddon for the long term.
