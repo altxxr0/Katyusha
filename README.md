@@ -44,7 +44,7 @@ Multiple Rocket Launcher System / Multiple Payload Launcher System
 Katyusha, Multiple Paylosd DDoS Software, that uses images / gif files as Payloads in-order to flood a Group Chat / Discord Server with Messages and Images, Using Windows Clipboard it copies the "Payload" images to your clipboard so YOU don't have to.
 
 ### Disclaimer ⚠:
-This software's intent varies as it is to benifit for both parties, and as such we are not responsible for any damages caused by User(s) / by Katyusha, as users are aware that it can be used for malicious intent and security purposes.
+This software's intent varies as it is to benifit for both parties, and as such we are not responsible for any damages caused by User(s) / by Katyusha, as users are aware that it can be used for malicious intent and is only used for security purposes / educational purposes only.
 
 ### Details 📋:
 It is proclaimed as a Multiple Rocket Launcher System, nicknamed by the Germans as the Stalin Organ, like Russia's MRLS Katyusha was designed to "demoralize" nearby units, but it has also inflicted a psychological effect both those who are targeted and those who operated it.
