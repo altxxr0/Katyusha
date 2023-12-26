@@ -61,7 +61,8 @@ But.. If you don't want to do that, You can Clone / Download the repository and 
 --------------------------------
 
 ### Payloads 🚀:
-		<< Katyusha >> 
+```
+<< Katyusha >> 
     Usage: Katyusha.exe [directory] [mode] [options]
                                   \ [mode] [options]
 
@@ -112,7 +113,7 @@ But.. If you don't want to do that, You can Clone / Download the repository and 
         [directory] [mode] [options]  Uragan a more destructive child of BM-13 and BM-18
         uragan (c:\my\directory)      Uses Images and tries to make it stretch to the
         bm-18 (c:\my\directory)       Highest limits.
-
+```
 ### Features 🔺:
 - Timer
 - Minimizer
