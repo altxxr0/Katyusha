@@ -140,7 +140,7 @@ Feel Free to contribute to the project, via [Pull Requests 🌿](https://github.
 
 ### Credits 👏:
   - Developers 🖥:
-   	- [Anarcho](https://github.com/Anarcho) : Original Developer | Developing and Creating the Original Katyusha, **(No longer active)**
+   	- [AnarchoUnidos](https://github.com/anarchounidos) : Original Developer | Developing and Creating the Original Katyusha, **(No longer active)**
    	- [Altxxr](https://github.com/Altxxr) : Developer | Maintaining and Continuing Katyusha **{ Project (Genesis) -> Armageddon }**
    	- [JamAdventurer](https://github.com/jamadventurer) : Co-Developer | Support / Bug Tracker
   - Special Thanks 🤍:
