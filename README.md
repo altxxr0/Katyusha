@@ -36,7 +36,7 @@
 Multiple Rocket Launcher System / Multiple Payload Launcher System
 
 ## Description 📜:
-Katyusha, Multiple Paylosd DDoS Software, that uses images / gif files as Payloads in-order to flood a Group Chat / Discord Server with Messages and Images, Using Windows Clipboard it copies the "Payload" images to your clipboard so YOU don't have to.
+Katyusha, Multiple Payload DDoS Software, that uses images / gif files as Payloads in-order to flood a Group Chat / Discord Server with Messages and Images, Using Windows Clipboard it copies the "Payload" images to your clipboard so YOU don't have to.
 
 ### Disclaimer ⚠:
 **This software's intent varies as it is to benifit for both parties, and as such we are not responsible for any damages caused by User(s) / by Katyusha, as users are aware that it can be used for malicious intent and is only used for security purposes / educational purposes only.**
@@ -58,7 +58,7 @@ But.. If you don't want to do that, You can Clone / Download the repository and 
 --------------------------------
 
 ## Details 📋:
-It is proclaimed as a Multiple Rocket Launcher System, nicknamed by the Germans as the Stalin Organ, like Russia's MRLS Katyusha was designed to "demoralize" nearby units, but it has also inflicted a psychological effect both those who are targeted and those who operated it.
+It is proclaimed as a **Multiple Rocket Launcher System**, nicknamed by the Germans as the Stalin Organ, like Russia's MRLS Katyusha was designed to "demoralize" nearby units, but it has also inflicted a psychological effect both those who are targeted and those who operated it.
 
 Though it is Very Inaccurate for precise targets or even missing them, Katyusha's are easily deployable and be relocated with ease, easy to produce, and would be hell if their are multiple Katyusha's are used, due to poor precision the Katyusha is not able to penetrate covered areas, and can only hit exposed unit(s) / Infastructure only by chance, and can sometiems be easily be detectable.
 
@@ -69,7 +69,7 @@ Katyusha is a C# and an [Open Source (with a restrictive license)](https://githu
 The idea of it came from most would "spam" discord servers with random or "insulting" text to servers, though it turned into sending random images partaining to the server's raiders, most likely to gain pouplarity or "clout" because this gives them ""Notoriety"" in the means of raiding and ruining servers.
 
 ### Use of Katyusha ❕:
-Katyusha can be used for raiding servers using images or if you want to be traditional you can text, as Katyusha's real counterpart the Stalin's Organ used against Nazi Germany at the time in the battle of Stalingrad, though deem inaffective as time goes on, was improved at some time proving its affectivity, the use of katyusha is dependant on YOU the user on what Payload you will attack, It's either random **"images of not so safe material"** or most probably a meme that everybody makes "skibbidi-toilet" or whatever the case maybe, as this can be also be used maliciously I do not recommend doing it, as it could potentially traumatize the users affected by it, Raiding is only for fun, not for destroying, But as you know somebody out their may not follow this, so simply.. It's your Responsibily whether you like it or not.
+Katyusha can be used for raiding servers using images or if you want to be traditional you can text, as Katyusha's real counterpart the Stalin's Organ used against Nazi Germany at the time in the battle of Stalingrad, though deem inaffective as time goes on, was improved at some time proving its affectivity, the use of katyusha is dependant on YOU the user on what Payload you will attack, It's either random **"images of not so safe material"** or most probably a meme that everybody makes "skibbidi-toilet" or whatever the case maybe, as this can be also be used maliciously I do not recommend doing it, as it could potentially traumatize the users affected by it, **Raiding is only for fun, not for destroying**, But as you know somebody out their may not follow this, so simply.. It's your Responsibily whether you like it or not.
 
 
 ### Payloads 🚀:
