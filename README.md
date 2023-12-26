@@ -166,3 +166,5 @@ No additional restrictions — You may not apply legal terms or technological me
 
 ### Other Information ℹ:
 For Those who are wondering Katyusha is a Passed Down Project to me, and me and [@JamAdventurer](https://github.com/jamadventurer) are Maintaining and Improving on Katyusha and Armageddon for the long term.
+
+**This orginization / project is not associated with the original Creator (AnarchoUnidos), About association with a Discord Server called "Lunkoy's German Army", If you have encountered this server it is most likely a Nazi Server, ran by a lunatic named lunkoy, This was said to me by Anarcho so I dont know, It's sounds bad, so I Think it 's proper to just avoid this type of server.**
