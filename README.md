@@ -56,7 +56,7 @@ But.. If you don't want to do that, You can Clone / Download the repository and 
 
 |   Version   |            File            |                               SHA256 Verification                               |
 | ----------- | -------------------------- | ------------------------------------------------------------------------------- |
-|  9.12.2023  | [Katyusha_v9.12.2023.0.zip](http://adfoc.us/70081782434898) | SHA256(.zip): 7bdb067c3c6feff55d3fe08eb83bc7d0e195d779d7d61298ccc2ef68bb1ae9ed || SHA256(.exe): 109544c6ac3d60419f91fe90a2122f616fff2c0507fef3de0d45d701846748c8 |
+|  9.12.2023  | [Katyusha_v9.12.2023.0.zip](http://adfoc.us/70081782434898) | SHA256(.zip): 7bdb067c3c6feff55d3fe08eb83bc7d0e195d779d7d61298ccc2ef68bb1ae9ed / SHA256(.exe): 109544c6ac3d60419f91fe90a2122f616fff2c0507fef3de0d45d701846748c8 |
 
 --------------------------------
 
