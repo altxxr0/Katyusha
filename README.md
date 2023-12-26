@@ -41,11 +41,6 @@ Katyusha, Multiple Paylosd DDoS Software, that uses images / gif files as Payloa
 ### Disclaimer ⚠:
 **This software's intent varies as it is to benifit for both parties, and as such we are not responsible for any damages caused by User(s) / by Katyusha, as users are aware that it can be used for malicious intent and is only used for security purposes / educational purposes only.**
 
-### Details 📋:
-It is proclaimed as a Multiple Rocket Launcher System, nicknamed by the Germans as the Stalin Organ, like Russia's MRLS Katyusha was designed to "demoralize" nearby units, but it has also inflicted a psychological effect both those who are targeted and those who operated it.
-
-Though it is Very Inaccurate for precise targets or even missing them, Katyusha's are easily deployable and be relocated with ease, easy to produce, and would be hell if their are multiple Katyusha's are used, due to poor precision the Katyusha is not able to penetrate covered areas, and can only hit exposed unit(s) / Infastructure only by chance, and can sometiems be easily be detectable.
-
 --------------------------------
 
 ## Download 🔻:
@@ -56,9 +51,26 @@ But.. If you don't want to do that, You can Clone / Download the repository and 
 
 |   Version   |            File            |                               SHA256 Verification                               |
 | ----------- | -------------------------- | ------------------------------------------------------------------------------- |
-|  9.12.2023  | [Katyusha_v9.12.2023.0.zip](http://adfoc.us/70081782434898) | SHA256(.zip): 7bdb067c3c6feff55d3fe08eb83bc7d0e195d779d7d61298ccc2ef68bb1ae9ed / SHA256(.exe): 109544c6ac3d60419f91fe90a2122f616fff2c0507fef3de0d45d701846748c8 |
+| 9.12.2023.0 | [Katyusha_v9.12.2023.0.zip](http://adfoc.us/70081799559291) | SHA256(.zip): 7bdb067c3c6feff55d3fe08eb83bc7d0e195d779d7d61298ccc2ef68bb1ae9ed / SHA256(.exe): 109544c6ac3d60419f91fe90a2122f616fff2c0507fef3de0d45d701846748c8 |
+| 3.02.3009.3 | [Katyusha v3.02.3009.3.zip](http://adfoc.us/70081799559291) | N/A (Old Release) |
+| 3.01.2209.3 | [Katyusha v3.01.2209.3.zip](http://adfoc.us/70081799559480) | N/A (Old Release) |
 
 --------------------------------
+
+## Details 📋:
+It is proclaimed as a Multiple Rocket Launcher System, nicknamed by the Germans as the Stalin Organ, like Russia's MRLS Katyusha was designed to "demoralize" nearby units, but it has also inflicted a psychological effect both those who are targeted and those who operated it.
+
+Though it is Very Inaccurate for precise targets or even missing them, Katyusha's are easily deployable and be relocated with ease, easy to produce, and would be hell if their are multiple Katyusha's are used, due to poor precision the Katyusha is not able to penetrate covered areas, and can only hit exposed unit(s) / Infastructure only by chance, and can sometiems be easily be detectable.
+
+### About Katyusha ❔:
+Katyusha is a C# and an [Open Source (with a restrictive license)](https://github.com/ProjectArmageddon/Katyusha/blob/master/LICENSE) Project about the use of [System.Windows.Clipboard](https://learn.microsoft.com/en-us/dotnet/api/system.windows.clipboard?view=windowsdesktop-8.0) using the native Clipboard for Windows and actually give it a "real" use by using it as an Attack Vector to Servers such as Discord.
+
+### Why Katyusha ❔:
+The idea of it came from most would "spam" discord servers with random or "insulting" text to servers, though it turned into sending random images partaining to the server's raiders, most likely to gain pouplarity or "clout" because this gives them ""Notoriety"" in the means of raiding and ruining servers.
+
+### Use of Katyusha ❕:
+Katyusha can be used for raiding servers using images or if you want to be traditional you can text, as Katyusha's real counterpart the Stalin's Organ used against Nazi Germany at the time in the battle of Stalingrad, though deem inaffective as time goes on, was improved at some time proving its affectivity, the use of katyusha is dependant on YOU the user on what Payload you will attack, It's either random **"images of not so safe material"** or most probably a meme that everybody makes "skibbidi-toilet" or whatever the case maybe, as this can be also be used maliciously I do not recommend doing it, as it could potentially traumatize the users affected by it, Raiding is only for fun, not for destroying, But as you know somebody out their may not follow this, so simply.. It's your Responsibily whether you like it or not.
+
 
 ### Payloads 🚀:
 ```
@@ -114,6 +126,7 @@ But.. If you don't want to do that, You can Clone / Download the repository and 
         uragan (c:\my\directory)      Uses Images and tries to make it stretch to the
         bm-18 (c:\my\directory)       Highest limits.
 ```
+
 ### Features 🔺:
 - Timer
 - Minimizer
@@ -129,14 +142,19 @@ Feel Free to contribute to the project, via [Pull Requests 🌿](https://github.
 
  #### Attribution-NonCommercial 4.0 International
 
-	You are free to:
-		Share — copy and redistribute the material in any medium or format
-		Adapt — remix, transform, and build upon the material
-			The licensor cannot revoke these freedoms as long as you follow the license terms.
+You are free to:
+	
+Share — copy and redistribute the material in any medium or format
+
+Adapt — remix, transform, and build upon the material
+The licensor cannot revoke these freedoms as long as you follow the license terms.
 	Under the following terms:
-		Attribution — You must give appropriate credit , provide a link to the license, and indicate if changes were made . You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-		NonCommercial — You may not use the material for commercial purposes .
-		No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
+Attribution — You must give appropriate credit , provide a link to the license, and indicate if changes were made . You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+NonCommercial — You may not use the material for commercial purposes.
+
+No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
 
 ### Credits 👏:
   - Developers 🖥:
