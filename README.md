@@ -57,80 +57,6 @@ But.. If you don't want to do that, You can Clone / Download the repository and 
 
 --------------------------------
 
-## Details 📋:
-It is proclaimed as a **Multiple Rocket Launcher System**, nicknamed by the Germans as the Stalin Organ, like Russia's MRLS Katyusha was designed to "demoralize" nearby units, but it has also inflicted a psychological effect both those who are targeted and those who operated it.
-
-Though it is Very Inaccurate for precise targets or even missing them, Katyusha's are easily deployable and be relocated with ease, easy to produce, and would be hell if their are multiple Katyusha's are used, due to poor precision the Katyusha is not able to penetrate covered areas, and can only hit exposed unit(s) / Infastructure only by chance, and can sometiems be easily be detectable.
-
-### About Katyusha ❔:
-Katyusha is a C# and an [Open Source (with a restrictive license)](https://github.com/ProjectArmageddon/Katyusha/blob/master/LICENSE) Project about the use of [System.Windows.Clipboard](https://learn.microsoft.com/en-us/dotnet/api/system.windows.clipboard?view=windowsdesktop-8.0) using the native Clipboard for Windows and actually give it a "real" use by using it as an Attack Vector to Servers such as Discord.
-
-### Why Katyusha ❔:
-The idea of it came from most would "spam" discord servers with random or "insulting" text to servers, though it turned into sending random images partaining to the server's raiders, most likely to gain pouplarity or "clout" because this gives them ""Notoriety"" in the means of raiding and ruining servers.
-
-### Use of Katyusha ❕:
-Katyusha can be used for raiding servers using images or if you want to be traditional you can text, as Katyusha's real counterpart the Stalin's Organ used against Nazi Germany at the time in the battle of Stalingrad, though deem inaffective as time goes on, was improved at some time proving its affectivity, the use of katyusha is dependant on YOU the user on what Payload you will attack, It's either random **"images of not so safe material"** or most probably a meme that everybody makes "skibbidi-toilet" or whatever the case maybe, as this can be also be used maliciously I do not recommend doing it, as it could potentially traumatize the users affected by it, **Raiding is only for fun, not for destroying**, But as you know somebody out their may not follow this, so simply.. It's your Responsibily whether you like it or not.
-
-
-### Payloads 🚀:
-```
-<< Katyusha >> 
-    Usage: Katyusha.exe [directory] [mode] [options]
-                                  \ [mode] [options]
-
-    Mode(s):
-
-      v1 Rockets:
-
-        text / BM-8                 : Uses Text Only. 
-
-                                      Uses a text file from the directory
-        [mode] [directory] [options]  if you dont have a directory it will
-        text (c:\my\directory\)       use the second argument as a Text and
-        bm-8 @everyone My Text!       if not it will default to your current
-                                      clipboard.
-        
-        normal / BM-13              : Uses Images / Gif Files.
-
-        [directory] [mode] [options]  Uses images / gif files in the specified
-        normal (c:\my\directory)      directory, and will go through them top-bottom
-        bm-13 (c:\my\directory)                                    
-
-        random / BM-18              : Uses Images / Gif files in random order.
-
-        [directory] [mode] [options]  Randomizing the image will prevent any duplicates
-        random (c:\my\directory)      from making an appearance will improve efficiency
-        bm-18 (c:\my\directory)
-
-      v2 Rockets:
-        
-        grad / BM-21                : Uses Destructive Text.
-
-        [mode] [int] [options]        Grad has improved destructiveness as the decendant
-        grad 100                      of BM-8, Uses Bloated Unicode Text, It requires the
-        bm-21 2100                    total number of text it will produce [int].
-
-        uragan / BM-27              : Uses Destructive Images.
-
-                                      Uragan Corrupts/Image Vortex/Image Crash the Image to
-                                      the target in-order to crash the clients in the group.
-
-      v3 Rockets:
-
-        smerch / BM-30              : Uses sophisticated local image hosting to send to target
-                                    [ Warning: Use VPN / Dynamic IP to change after an attack  ]
-                                    [ This to prevent YOU from being DDoS'ed Because it uses   ]
-                                    [ Your Local/Current IP, This needs to use your IP to work ] 
-
-        [directory] [mode] [options]  Uragan a more destructive child of BM-13 and BM-18
-        uragan (c:\my\directory)      Uses Images and tries to make it stretch to the
-        bm-18 (c:\my\directory)       Highest limits.
-```
-
-### Features 🔺:
-- Timer
-- Minimizer
-
 ### Contribution 🤝:
 Feel Free to contribute to the project, via [Pull Requests 🌿](https://github.com/ProjectArmageddon/Katyusha/pulls) or if you want a feature/idea you want to share to make Katyusha better use [Issues 🗣](https://github.com/ProjectArmageddon/Katyusha/issues).
 
@@ -168,3 +94,99 @@ No additional restrictions — You may not apply legal terms or technological me
 For Those who are wondering Katyusha is a Passed Down Project to me, and me and [@JamAdventurer](https://github.com/jamadventurer) are Maintaining and Improving on Katyusha and Armageddon for the long term.
 
 **This orginization / project is not associated with the original Creator (AnarchoUnidos), About association with a Discord Server called "Lunkoy's German Army", If you have encountered this server it is most likely a Nazi Server, ran by a lunatic named lunkoy, This was said to me by Anarcho so I dont know, It's sounds bad, so I Think it 's proper to just avoid this type of server.**
+
+## Details 📋:
+It is proclaimed as a **Multiple Rocket Launcher System**, nicknamed by the Germans as the Stalin Organ, like Russia's MRLS Katyusha was designed to "demoralize" nearby units, but it has also inflicted a psychological effect both those who are targeted and those who operated it.
+
+Though it is Very Inaccurate for precise targets or even missing them, Katyusha's are easily deployable and be relocated with ease, easy to produce, and would be hell if their are multiple Katyusha's are used, due to poor precision the Katyusha is not able to penetrate covered areas, and can only hit exposed unit(s) / Infastructure only by chance, and can sometiems be easily be detectable.
+
+### About Katyusha ❔:
+Katyusha is a C# and an [Open Source (with a restrictive license)](https://github.com/ProjectArmageddon/Katyusha/blob/master/LICENSE) Project about the use of [System.Windows.Clipboard](https://learn.microsoft.com/en-us/dotnet/api/system.windows.clipboard?view=windowsdesktop-8.0) using the native Clipboard for Windows and actually give it a "real" use by using it as an Attack Vector to Servers such as Discord.
+
+### Why Katyusha ❔:
+The idea of it came from most would "spam" discord servers with random or "insulting" text to servers, though it turned into sending random images partaining to the server's raiders, most likely to gain pouplarity or "clout" because this gives them ""Notoriety"" in the means of raiding and ruining servers.
+
+### Use of Katyusha ❕:
+Katyusha can be used for raiding servers using images or if you want to be traditional you can text, as Katyusha's real counterpart the Stalin's Organ used against Nazi Germany at the time in the battle of Stalingrad, though deem inaffective as time goes on, was improved at some time proving its affectivity, the use of katyusha is dependant on YOU the user on what Payload you will attack, It's either random **"images of not so safe material"** or most probably a meme that everybody makes "skibbidi-toilet" or whatever the case maybe, as this can be also be used maliciously I do not recommend doing it, as it could potentially traumatize the users affected by it, **Raiding is only for fun, not for destroying**, But as you know somebody out their may not follow this, so simply.. It's your Responsibily whether you like it or not.
+
+### Payloads 🚀:
+```
+ << Katyusha >> 
+    Usage: Katyusha.exe [directory] [mode] [options]
+                                  \ [mode] [options]
+
+    Mode(s):
+
+      v1 Rockets:
+
+        text / BM-8                 : Uses Text Only. 
+
+                                      Uses a text file from the directory
+        [mode] [directory] [options]  if you dont have a directory it will
+        text (c:\my\directory\)       use the second argument as a Text and
+        bm-8 @everyone My Text!       if not it will default to your current
+                                      clipboard.
+        
+        normal / BM-13              : Uses Images / Gif Files.
+
+        [directory] [mode] [options]  Uses images / gif files in the specified
+        (c:\my\directory) normal      directory, and will go through them top-bottom
+        (c:\my\directory) bm-13                                     
+
+        random / BM-18              : Uses Images / Gif files in random order.
+
+        [directory] [mode] [options]  Randomizing the image will prevent any duplicates
+        (c:\my\directory) random      from making an appearance will improve efficiency
+        (c:\my\directory) bm-18
+
+      v2 Rockets:
+        
+        grad / BM-21                : Uses Destructive Text.
+
+        [mode] [int] [options]        Grad has improved destructiveness as the decendant
+        grad 100                      of BM-8, Uses Bloated Unicode Text, It requires the
+        bm-21 2100                    total number of text it will produce [int].
+
+        uragan / BM-27              : Uses Destructive Images.
+        [directory] [mode] [options]  Uragan a more destructive child of BM-13 and BM-18
+        (c:\my\directory) uragan      Uses Images and tries to make it stretch to the
+        (c:\my\directory) bm-18       Highest limits.
+
+                                      Uragan Corrupts/Image Vortex/Image Crash the Image to
+                                      the target in-order to crash the clients in the group.
+
+      v3 Rockets:
+
+        smerch / BM-30              : Uses sophisticated local image hosting to send to target
+        [directory] [mode] [options]  Outputing Links to the image it will automatically load
+        (c:\my\directory) smerch      as an embeded image, effectove against discord servers,
+        (c:\my\directory) bm-30       with embed/links enabked.
+                                    [ Warning: Use VPN / Dynamic IP to change after an attack  ]
+                                    [ This to prevent YOU from being DDoS'ed Because it uses   ]
+                                    [ Your Local/Current IP, This needs to use your Public IP  ]
+                                    [ to work.                                                 ] 
+                                    
+    Features:                       
+                                    
+        --timer / -t                : Time limit of the Operation if you don't wan't it to run
+        ..[mode] --timer 15           For long periods. (In Seconds)
+        ..[mode] -t 10
+
+        --macro / -m                : Automates the process of Pasting and Sending the payload
+        ..[mode] --macro              to the target server / group chat.
+        ..[mode] -m
+
+    Controls:
+
+        CapsLock                    : Temporarily Pauses the current Operation(s) of Katyusha
+                                      Including Mode(s) and Features that were used.
+    
+    Other:
+        
+                           For more details go to these following links:
+        https://github.com/ProjectArmageddon/Katyusha | https://github.com/ProjectArmageddon
+        
+```
+
+
+
