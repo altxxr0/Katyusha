@@ -49,11 +49,13 @@ But.. If you don't want to do that, You can Clone / Download the repository and 
 
 #### Confused? Press the Skip Button in the Upper Right Corner (It is almost blended into the Background)
 
-|   Version   |            File            |                               SHA256 Verification                               |
-| ----------- | -------------------------- | ------------------------------------------------------------------------------- |
+|   Version-   |            File            |                               SHA256 Verification                               |
+| ------------ | -------------------------- | ------------------------------------------------------------------------------- |
+| 28.12.2023.0 | [Katyusha v27.12.2023.0.zip](http://adfoc.us/70081799559795) | SHA256(.zip): 7f7e5a450aa144ae5bdecf57cabaf109b6db7138afcf727b5f5936a271600eb5 / SHA256(.exe): f9fd19994f654c3580027122f11efc93dccf4f2216beb9ad3277b330fa4e7cfb
 | 9.12.2023.0 | [Katyusha_v9.12.2023.0.zip](http://adfoc.us/70081799559291) | SHA256(.zip): 7bdb067c3c6feff55d3fe08eb83bc7d0e195d779d7d61298ccc2ef68bb1ae9ed / SHA256(.exe): 109544c6ac3d60419f91fe90a2122f616fff2c0507fef3de0d45d701846748c8 |
 | 3.02.3009.3 | [Katyusha v3.02.3009.3.zip](http://adfoc.us/70081799559291) | N/A (Old Release) |
 | 3.01.2209.3 | [Katyusha v3.01.2209.3.zip](http://adfoc.us/70081799559480) | N/A (Old Release) |
+
 
 --------------------------------
 
