@@ -58,15 +58,31 @@
 // █▄░█ █▀█ █▄░█ █▀▀ █▀█ █▀▄▀█ █▀▄▀█ █▀▀ █▀█ █▀▀ █ ▄▀█ █░░   █▀█ █░█ █▀█ █▀█ █▀█ █▀ █▀▀ █▀   █▀█ █▄░█ █░░ █▄█ ░
 // █░▀█ █▄█ █░▀█ █▄▄ █▄█ █░▀░█ █░▀░█ ██▄ █▀▄ █▄▄ █ █▀█ █▄▄   █▀▀ █▄█ █▀▄ █▀▀ █▄█ ▄█ ██▄ ▄█   █▄█ █░▀█ █▄▄ ░█░ ▄
 // 
+
+
+// System //
+
 using System;
-using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Net;
 using System.Text;
+using System.Linq;
+using System.Drawing;
 using System.Windows;
 using System.Windows.Interop;
+using System.Security.Principal;
 using System.Windows.Media.Imaging;
+
+// Selenium //
+
+using OpenQA.Selenium;
+using OpenQA.Selenium.IE;
+using OpenQA.Selenium.Edge;
+using OpenQA.Selenium.Safari;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Interactions;
+using System.Diagnostics;
 
 namespace Katyusha
 {
@@ -74,6 +90,7 @@ namespace Katyusha
     {
         static string[] imageFiles;
         static string folderPath;
+        static int isOnPause;
 
         [STAThread]
         static void Main(string[] args)
@@ -94,42 +111,35 @@ namespace Katyusha
             else if (folderPath.Length > 0)
             {
                 Console.WriteLine(@"
+                                               .                                
+                                            .^~~~^:.                            
+                                        .^~~~!!!!!!~~^^.                        
+                                    .:^~~!!7!!!!!!!!!!!!~~^:..                  
+                                 .:~!~~!7!!77!!7!7!!!!!!!!77!~                  
+                             .:^~!!~~!!!77!!!~~!!!!?77!777!^:.                  
+                         .:^~~~!!?!!777!!~~!!~~777?77!!~^.                      
+                      .:^!!!!!!!7!77!~!~!7!~777??J777!~^:.                      
+                  .:^~~~~~~!!777!!!~!~!~7?7?777!7?77???JJJ?7~^.                 
+            :^:::^~!~~~~!!7!!!7!!777!!77??7!!~:.~7!!!!77????J?!^^^^^:..         
+        .^7Y55YJ?!!~~!!!!!!~~~~!~7777???!7^.   .!7!!!!!!!?JJ????7JYYYYJ?!^.     
+     :!J555Y5YYJJYJ??~~~!!!~!!!77?????7^.^     .!!!!!!!!!?Y?????J?JJJJJJ???^:   
+ :!!?YP55YYJJYYYYYYJJJ7?7~777???77?!!~~~^:     .!!777?!!!?YJJYYYYJ?J?????7?7!^  
+ .~777!J?JYYYYJJJJY5YYYY55J77!!7~:::..!?7::^^^^^~7JJ??!~!7YYPPPP5JJJJJJJJ?7?!^  
+  .^^~!7777J?JYY5YYJY5PPY?7?7!!!~~^^:!77!77!~~!~~!7??J!^!7J5GP55YJ7??~^~7??!:^. 
+    .:^^~~!!77?YJY5P5J?JY5Y?!77!!!!~~~~!~!~~~^^^^7JYYYJ!~?Y5YYYJJ?7?!.!Y5YYY7   
+      ..:^~~~!7!?5JJJJYYJ?77??!!~!~~^^^^~^..!7^^?5Y?7!JY!JYJJJJJJJ?7^!55JYYY?   
+         ...:^~~~!Y5J?~~~77?!~~^^^^~~^^~7777??!!JY7777Y!.:!?7!~^:..  ^Y5JJYJ:   
+             .:^!77~:^~^~~~~^~!!77??JJJYYYYYYJ??JYJJJJ^               :!7!^     
+               .~~~~^^:^~~~!??JJJJJJJ??7!?JJJYJ!!Y~:.                           
+                  .~!777!7???JJYYJJJ?^^^J5?J!!5J :.                             
+                    ::.:7???JYYJ??!?57^!5Y77?Y5^                                
+                        .^!?YJY777!JY: :!JYYJ7:                                 
+                           .^7YYYJY?:     ..                                    
+                              :~~^.                                             
 
-                                                         .::..                                      
-                                                      .:^~!!7~~^.                                   
-                                                  .:~~~~!!!!~~!!!~~^^.                              
-                                              .:^^~!7!7!!~~~!!!!!!!!!~~~:^                          
-                                           .:~!~~77!~!7!777?!!~!~!!!!!!!!!!~~.                      
-                                       .:^^~!!!~~!!!777!!!!!~7!!7!!!!!!7777!~:                      
-                                    .:^~!!7!~~!!7777!!!~!~!7!~~7?7777?7!!~:.                        
-                                .:^~~!~!!?7!!77!7!!~~!!!~~~777???7!!!~^:                            
-                             .:^!!!~~~!!7777!!~7!~~!7~~!777????!!7!~^.                              
-                         .:^~~!~!~7!!777!!!7!!~~!~!?!7777?777????????J?7!~:.                        
-                     .:^^~~!~~~~~!!!!77?!77!~!~!7!777?777!!~!777777????JJJJ?7~:                     
-               :~^:^^~~!!~~~~~!!77!!!!!!!777?77?7??7?!!!~:. ~77!!!!!777?????J?!^~!~!!^:.            
-           .~?Y555YJ77~~~~!!!!!~7!~~~!!!~!77777???777^.    .!77!!!!!!!!?YJJJ??J?!?YYYYYYJ7!^.       
-        :!J555Y5Y55Y?JJ?!?!!~!!!!~!!!~!7777????77~:~:      .!!!!!!!!!!77YJ????????JJJJJJJJJ??~::    
-  .::^?Y5P55YYYYJJJYYYY5Y?7!~~!!!!~7?77????77?77!: ~       .!!!!!!!!!!!7YJ????JJYJJJJJJ????!??~~^   
- :!???J5YY5YJJ?JYYYYYYJ?J5YJJY?~7?7??7?77!7!^^^^!!~^       .!!7???J?~~!!JYYYYY555J?J????JJJ????7!:  
-  ^~777!!Y7J5YYYYYJ??YY5YY55YJYP5?77~!!?!. ::..:???:.:^~~~^~~~?JJ???~~!!JJYPP5PP5JJJJJJJJJJ?77?~:.  
-   :^^~!777?!J5J?JYYYY55YJY5PGPJ!~777~!!~~^^:.~7?777777!~!!~~~??????^^!!JJ5GG555YJ?7?J7~^^!777~:^^  
-    .:::~!~~!7~!5JY55J?J5GG5Y??JY5J!!77!!~~!!!!!~!^!!!~^:^^~~^7?JYYY~^~7YY555YYYYJ7777::~?55YYY! .  
-      .:::^~~!!!~~???PGPY?!7JYP5J7!!7!!!77!!^:^~!!~!~:^7!^::^J55YJJJY?~7YYYYYJJJJ??7J~.75PJYJJJ5.   
-         ..:^^:~!7!!7J??JY55JJ777???J7!~^~!~~^^^^^^^:  ~J~^~J5Y?77~!YY~?JJJJJJYYYJJ7!:^JPYJYYJYJ    
-           ...:::~!~^~?P5J?!~~~!77?!~~~^^^^^^^^::~7?7?7??7!!JY?!77!J5~ .^7J?!~^:.     .?5YJJJYJ:    
-               .:::^~!77~:^~!~~!!!~^^~~~~!77??JJJJYYYYYYJJJ??YYJJY5J^                  .!JJ?7~.     
-                   ^77!~~^^:::^~^^~!7??JJJJJJYYYYJ???JJJJ?7!JYJ?7!^                                 
-                    :::~~^^^^~~~!77?JJJJJJJJJ?!^!:^?YYJ??Y5?.?7                                     
-                       .~7??77!!7????JYJJJJJJJ~^^~YPJ7J7^?5?  .                                     
-                         .:. :7?????YJYJ??!!J5Y^~755?7!?J55:                                        
-                              :~7?J5JYY!??!^?5? :^J55YY55?:                                         
-                                .:7??5Y7?!JY5?.   .^~!~^.                                           
-                                    :7YYYYJ?^                                                       
-                                      .:::                                                          
-
-                               \\ █▄▀ ▄▀█ ▀█▀ █▄█ █ █ █▀ █ █ ▄▀█ //
-                               // █ █ █▀█  █   █  █▄█ ▄█ █▀█ █▀█ \\
-
+                         \\ █▄▀ ▄▀█ ▀█▀ █▄█ █ █ █▀ █ █ ▄▀█ //
+                         // █ █ █▀█  █   █  █▄█ ▄█ █▀█ █▀█ \\
+                              ProjectArmageddon/Katyusha
 ");
                 switch (folderPath.ToLower())
                 {
@@ -166,6 +176,7 @@ namespace Katyusha
 
             bool capsLockEnabled = Console.CapsLock;
             MainLoop(mode, imageFiles);
+            Features(args);
         }
 
         static void MainLoop(string mode, string[] imageFiles)
@@ -230,17 +241,50 @@ namespace Katyusha
             }
         }
 
+        static void Features(string[] features)
+        {
+            int e = 2;
+   
+            while (true)
+            {
+                if (features[e] == "--timer" && features[e] == "-t")
+                {
+                    Timer(Int32.Parse(features[e++]));
+                    e++;
+                }
+                else if (features[e] == "--macro" && features[e] == "-m")
+                {
+                    Macro(features[e++]);
+                    e++;
+                }
+                else
+                {
+                    Console.WriteLine("");
+                }
+            }
+        }
+
         static void NormalMode(string[] imageFiles)
         {
             foreach (string imagePath in imageFiles)
             {
-                if (Console.CapsLock)
+                if (Console.CapsLock && isOnPause > 0)
                 {
-                    Console.WriteLine("CapsLock is enabled. Stopping the operation.");
-                    return;
+                    // Don't Output
                 }
-
-                ProcessImage(imagePath);
+                else if (!Console.CapsLock && isOnPause > 0)
+                {
+                    isOnPause--;
+                }
+                else if (Console.CapsLock)
+                {
+                    Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH: mm")}] (||) => CapsLock is enabled. Stopping the operation.");
+                    isOnPause++;
+                }
+                else
+                {
+                    ProcessImage(imagePath);
+                }
             }
         }
 
@@ -249,13 +293,23 @@ namespace Katyusha
             Random random = new Random();
             foreach (string imagePath in imageFiles.OrderBy(x => random.Next()))
             {
-                if (Console.CapsLock)
+                if (Console.CapsLock && isOnPause > 0)
                 {
-                    Console.WriteLine("CapsLock is enabled. Stopping the operation.");
-                    return;
+                    // Don't Output
                 }
-
-                ProcessImage(imagePath);
+                else if (!Console.CapsLock && isOnPause > 0)
+                {
+                    isOnPause--;
+                }
+                else if (Console.CapsLock)
+                {
+                    Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH: mm")}] (||) => CapsLock is enabled. Stopping the operation.");
+                    isOnPause++;
+                }
+                else
+                {
+                    ProcessImage(imagePath);
+                }
             }
         }
 
@@ -263,57 +317,105 @@ namespace Katyusha
         {
             while (true)
             {
-                if (File.Exists(folderPath + "*.txt*"))
+                if (Console.CapsLock && isOnPause > 0)
                 {
-                    string data = File.ReadAllText(folderPath + "*.txt*");
-                    Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH:mm")}] (+) => {data} ");
-                    Clipboard.SetText(data);
+                    // Don't Output
                 }
-                else if (folderPath.Length > 0)
+                else if (!Console.CapsLock && isOnPause > 0)
                 {
-                    Clipboard.SetText(folderPath);
-                    Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH:mm")}] (+) => {folderPath} ");
+                    isOnPause--;
+                }
+                else if (Console.CapsLock)
+                {
+                    Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH: mm")}] (||) => CapsLock is enabled. Stopping the operation.");
+                    isOnPause++;
                 }
                 else
                 {
-                    Clipboard.SetDataObject(Clipboard.GetDataObject());
-                    Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH:mm")}] (+) => {Clipboard.GetDataObject()} ");
+                    if (File.Exists(folderPath + "*.txt*"))
+                    {
+                        string data = File.ReadAllText(folderPath + "*.txt*");
+                        Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH:mm")}] (+) => {data} ");
+                        Clipboard.SetText(data);
+                    }
+                    else if (folderPath.Length > 0)
+                    {
+                        Clipboard.SetText(folderPath);
+                        Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH:mm")}] (+) => {folderPath} ");
+                    }
+                    else
+                    {
+                        Clipboard.SetDataObject(Clipboard.GetDataObject());
+                        Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH:mm")}] (+) => {Clipboard.GetDataObject()} ");
+                    }
                 }
             }
-
         }
 
         static void FragmentMode(int length)
         {
             while (true)
             {
-                string[] variableArray = Properties.Resource.Dumper.Split(',');
-                Random random = new Random();
-                StringBuilder generatedText = new StringBuilder();
-
-                for (int j = 0; j < length; j++)
+                if (Console.CapsLock && isOnPause > 0)
                 {
-                    int randomIndex = random.Next(variableArray.Length);
-                    generatedText.Append(variableArray[randomIndex]);
+                    // Don't Output
                 }
-                Clipboard.SetText(generatedText.ToString());
-                Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH:mm")}] (+) => {generatedText} ");
+                else if (!Console.CapsLock && isOnPause > 0)
+                {
+                    isOnPause--;
+                }
+                else if (Console.CapsLock)
+                {
+                    Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH: mm")}] (||) => CapsLock is enabled. Stopping the operation.");
+                    isOnPause++;
+                }
+                else
+                {
+                    string[] variableArray = Properties.Resource.Dumper.Split(',');
+                    Random random = new Random();
+                    StringBuilder generatedText = new StringBuilder();
+
+                    for (int j = 0; j < length; j++)
+                    {
+                        int randomIndex = random.Next(variableArray.Length);
+                        generatedText.Append(variableArray[randomIndex]);
+                    }
+                    Clipboard.SetText(generatedText.ToString());
+                    Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH:mm")}] (+) => {generatedText} ");
+                }
+                
             }
         }
 
         static void ConventMode(string[] imageFiles)
         {
-            foreach (string imagePath in imageFiles)
+            if (Console.CapsLock && isOnPause > 0)
             {
-                Random random = new Random();
+                // Don't Output
+            }
+            else if (!Console.CapsLock && isOnPause > 0)
+            {
+                isOnPause--;
+            }
+            else if (Console.CapsLock)
+            {
+                Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH: mm")}] (||) => CapsLock is enabled. Stopping the operation.");
+                isOnPause++;
+            }
+            else
+            {
+                foreach (string imagePath in imageFiles)
+                {
+                    Random random = new Random();
 
-                Image img = Image.FromFile(imagePath);
-                Bitmap resizedImage = new Bitmap(Int16.MaxValue, Int16.MinValue, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
-                Graphics graphics = Graphics.FromImage(resizedImage);
-                graphics.DrawImage(img, new Rectangle(0, 0, Int16.MaxValue, Int16.MinValue));
-                BitmapSource bitmapSource = ConvertDrawingImageToBitmapSource(img);
-                Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH:mm")}] (+) => {bitmapSource} ");
-                Clipboard.SetImage(bitmapSource);
+                    Image img = Image.FromFile(imagePath);
+                    Bitmap resizedImage = new Bitmap(Int16.MaxValue, Int16.MinValue, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+                    Graphics graphics = Graphics.FromImage(resizedImage);
+                    graphics.DrawImage(img, new Rectangle(0, 0, Int16.MaxValue, Int16.MinValue));
+                    BitmapSource bitmapSource = ConvertDrawingImageToBitmapSource(img);
+                    Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH:mm")}] (+) => {bitmapSource} ");
+                    Clipboard.SetImage(bitmapSource);
+                }
             }
         }
 
@@ -375,14 +477,14 @@ namespace Katyusha
         normal / BM-13              : Uses Images / Gif Files.
 
         [directory] [mode] [options]  Uses images / gif files in the specified
-        normal (c:\my\directory)      directory, and will go through them top-bottom
-        bm-13 (c:\my\directory)                                    
+        (c:\my\directory) normal      directory, and will go through them top-bottom
+        (c:\my\directory) bm-13                                     
 
         random / BM-18              : Uses Images / Gif files in random order.
 
         [directory] [mode] [options]  Randomizing the image will prevent any duplicates
-        random (c:\my\directory)      from making an appearance will improve efficiency
-        bm-18 (c:\my\directory)
+        (c:\my\directory) random      from making an appearance will improve efficiency
+        (c:\my\directory) bm-18
 
       v2 Rockets:
         
@@ -393,6 +495,9 @@ namespace Katyusha
         bm-21 2100                    total number of text it will produce [int].
 
         uragan / BM-27              : Uses Destructive Images.
+        [directory] [mode] [options]  Uragan a more destructive child of BM-13 and BM-18
+        (c:\my\directory) uragan      Uses Images and tries to make it stretch to the
+        (c:\my\directory) bm-18       Highest limits.
 
                                       Uragan Corrupts/Image Vortex/Image Crash the Image to
                                       the target in-order to crash the clients in the group.
@@ -400,13 +505,34 @@ namespace Katyusha
       v3 Rockets:
 
         smerch / BM-30              : Uses sophisticated local image hosting to send to target
+        [directory] [mode] [options]  Outputing Links to the image it will automatically load
+        (c:\my\directory) smerch      as an embeded image, effective against discord servers,
+        (c:\my\directory) bm-30       with embed/links enabked.
                                     [ Warning: Use VPN / Dynamic IP to change after an attack  ]
                                     [ This to prevent YOU from being DDoS'ed Because it uses   ]
-                                    [ Your Local/Current IP, This needs to use your IP to work ] 
+                                    [ Your Local/Current IP, This needs to use your Public IP  ]
+                                    [ to work.                                                 ] 
+                                    
+    Features:                       
+                                    
+        --timer / -t                : Time limit of the Operation if you don't wan't it to run
+        ..[mode] --timer 15           For long periods. (In Seconds)
+        ..[mode] -t 10
 
-        [directory] [mode] [options]  Uragan a more destructive child of BM-13 and BM-18
-        uragan (c:\my\directory)      Uses Images and tries to make it stretch to the
-        bm-18 (c:\my\directory)       Highest limits.
+        --macro / -m                : Automates the process of Pasting and Sending the payload
+        ..[mode] --macro              to the target server / group chat.
+        ..[mode] -m
+
+    Controls:
+
+        CapsLock                    : Temporarily Pauses the current Operation(s) of Katyusha
+                                      Including Mode(s) and Features that were used.
+    
+    Other:
+        
+                           For more details go to these following links:
+        https://github.com/ProjectArmageddon/Katyusha | https://github.com/ProjectArmageddon
+        
 ");
         }
         private static System.Drawing.Image ConvertBitmapImageToDrawingImage(BitmapImage bitmapImage)
@@ -441,46 +567,62 @@ namespace Katyusha
 
             while (true)
             {
-                HttpListenerContext context = listener.GetContext();
-                HttpListenerResponse response = context.Response;
-
-                try
+                if (Console.CapsLock && isOnPause > 0)
                 {
-                    string ipAddress = GetLocalIPAddress();
-                    string requestedFileName = context.Request.Url.Segments[1];
-                    string fileExtension = Path.GetExtension(requestedFileName).ToLower();
-                    if (fileExtension == ".png" || fileExtension == ".jpg" || fileExtension == ".jpeg" || fileExtension == ".apng" || fileExtension == ".gif")
+                    // Don't Output
+                }
+                else if (!Console.CapsLock && isOnPause > 0)
+                {
+                    isOnPause--;
+                }
+                else if (Console.CapsLock)
+                {
+                    Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH: mm")}] (||) => CapsLock is enabled. Stopping the operation.");
+                    isOnPause++;
+                }
+                else
+                {
+                    HttpListenerContext context = listener.GetContext();
+                    HttpListenerResponse response = context.Response;
+
+                    try
                     {
-                        string filePath = Path.Combine(directoryPath, requestedFileName);
-                        if (File.Exists(filePath))
+                        string ipAddress = GetLocalIPAddress();
+                        string requestedFileName = context.Request.Url.Segments[1];
+                        string fileExtension = Path.GetExtension(requestedFileName).ToLower();
+                        if (fileExtension == ".png" || fileExtension == ".jpg" || fileExtension == ".jpeg" || fileExtension == ".apng" || fileExtension == ".gif")
                         {
-                            byte[] fileBytes = File.ReadAllBytes(filePath);
-                            response.OutputStream.Write(fileBytes, 0, fileBytes.Length);
-                            response.ContentType = GetContentType(fileExtension);
-                            response.StatusCode = 200;
-                            Console.WriteLine($"<< Katyusha >> [{DateTime.Now.ToString("HH:mm")}] (+) => {response}");
-                            Clipboard.SetText($"http://{ipAddress}:8080/{requestedFileName}");
-                            
+                            string filePath = Path.Combine(directoryPath, requestedFileName);
+                            if (File.Exists(filePath))
+                            {
+                                byte[] fileBytes = File.ReadAllBytes(filePath);
+                                response.OutputStream.Write(fileBytes, 0, fileBytes.Length);
+                                response.ContentType = GetContentType(fileExtension);
+                                response.StatusCode = 200;
+                                Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH:mm")}] (+) => {response}");
+                                Clipboard.SetText($"http://{ipAddress}:8080/{requestedFileName}");
+
+                            }
+                            else
+                            {
+                                byte[] notFoundBytes = System.Text.Encoding.UTF8.GetBytes("404 Not Found");
+                                response.OutputStream.Write(notFoundBytes, 0, notFoundBytes.Length);
+                                response.StatusCode = 404;
+                                Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH:mm")}] (-) => {response}");
+                            }
                         }
                         else
                         {
-                            byte[] notFoundBytes = System.Text.Encoding.UTF8.GetBytes("404 Not Found");
-                            response.OutputStream.Write(notFoundBytes, 0, notFoundBytes.Length);
-                            response.StatusCode = 404;
-                            Console.WriteLine($"<< Katyusha >> [{DateTime.Now.ToString("HH:mm")}] (-) => {response}");
+                            byte[] badRequestBytes = System.Text.Encoding.UTF8.GetBytes("400 Bad Request");
+                            response.OutputStream.Write(badRequestBytes, 0, badRequestBytes.Length);
+                            response.StatusCode = 400;
+                            Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH:mm")}] (-) => {response}");
                         }
                     }
-                    else
+                    catch (Exception ex)
                     {
-                        byte[] badRequestBytes = System.Text.Encoding.UTF8.GetBytes("400 Bad Request");
-                        response.OutputStream.Write(badRequestBytes, 0, badRequestBytes.Length);
-                        response.StatusCode = 400;
-                        Console.WriteLine($"<< Katyusha >> [{DateTime.Now.ToString("HH:mm")}] (-) => {response}");
+                        Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH: mm")}] (-) => Error: {ex.Message}");
                     }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Error: " + ex.Message);
                 }
             }
         }
@@ -518,11 +660,109 @@ namespace Katyusha
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error getting local IP address: {ex.Message}");
+                Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH: mm")}] (-) => Error: {ex.Message}");
             }
 
             return ipAddress;
         }
+
+        // Features //
+
+        private static void Timer(int timeduration)
+        {
+            int durationInSeconds = 5;
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
+
+            Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH: mm")}] (Timer) => Timer has started waiting for ");
+
+            while (stopwatch.Elapsed.TotalSeconds < durationInSeconds)
+            {
+                if (Console.CapsLock && isOnPause > 0)
+                {
+                    // Don't Output
+                }
+                else if (Console.CapsLock)
+                {
+                    Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH: mm")}] (||) => CapsLock is enabled. Stopping the operation.");
+                    isOnPause++;
+                    stopwatch.Stop();
+                } 
+                else if (!Console.CapsLock && isOnPause > 0)
+                {
+                    stopwatch.Start();
+                }
+                else
+                {
+                    Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH: mm")}] (Timer) => {stopwatch.Elapsed.TotalSeconds}");
+                }
+            }
+
+            if (stopwatch.Elapsed.TotalSeconds == durationInSeconds)
+            {
+                stopwatch.Stop();
+                Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH: mm")}] (Timer) => Timer Has Stopped, Ending Operation . . .");
+                Environment.Exit(0);
+            }
+        }
+
+        private static void Macro(string browser)
+        {
+            if (!IsAdmin())
+            {
+                Console.WriteLine($"<< Katyusha >> [{DateTime.Now.ToString("HH: mm")}] (-) => Error: Insufficent Privillages, Run me again in Adminsitrator.");
+                return;
+            }
+            else
+            {
+                IWebDriver driver = GetDriver(browser);
+                
+                try
+                {
+                    while (true)
+                    {
+                        Actions actions = new Actions(driver);
+                        actions.KeyDown(Keys.Control).SendKeys("v").KeyUp(Keys.Control).Perform();
+                        Console.WriteLine($"<< Katyusha >>[{DateTime.Now.ToString("HH: mm")}] (+) => {actions}");
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine($"[{DateTime.Now.ToString("HH: mm")}] (-) => {e}");
+                }
+            }
+        }
+
+        static IWebDriver GetDriver(string browserName)
+        {
+            switch (browserName.ToLower())
+            {
+                case "chrome":
+                    return new ChromeDriver();
+                case "firefox":
+                    return new FirefoxDriver();
+                case "edge":
+                    return new EdgeDriver();
+                case "IE":
+                    return new InternetExplorerDriver();
+                case "safari":
+                    return new SafariDriver();
+                case "chromium":
+                    return new ChromeDriver();
+                default:
+                    throw new NotSupportedException($"Browser '{browserName}' is not supported.");
+            }
+        }
+
+        static bool IsAdmin()
+        {
+            using (WindowsIdentity identity = WindowsIdentity.GetCurrent())
+            {
+                WindowsPrincipal principal = new WindowsPrincipal(identity);
+                return principal.IsInRole(WindowsBuiltInRole.Administrator);
+            }
+        }
+
     }
 
 
