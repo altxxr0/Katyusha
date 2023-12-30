@@ -61,6 +61,15 @@ namespace Katyusha.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {user.Mention}, Your have a high role, Cannot verify..
+        /// </summary>
+        public static string DBC_Verify_HighRole {
+            get {
+                return ResourceManager.GetString("DBC_Verify_HighRole", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to A̷̧̨̢̧̨̨̧̨̛̛̛̛͚̼͙̝͔̯̝͓̞̳͎̻̖̠̹͉̬͕̖͚̩̭̮̥̣̯͎͇͉̼̯̮͈̮͙̳͖̮̰̰̝̟̻̻̭̟̱͇̗̤͎̬͎̜̠̯̹̮̭̝͇̯͎̳̘͖̅̈́̿̑́̂̅̾̇̈́̊̔̃͛͂̈́̄̃̽̉̈́̓̎̈͛̈́͛̓̏̍̅̓̒͐́̅̎̋̓̔̅̂̎̂̓́͗̋̈́͋͂̏̎̄̓̑͊̇̑͗̔͌̆̓͒͐̃͌̃͊̎̇̏̒̂̑͋̄̀͊̏̎̈́͗͛͆͒͋͊̌̂͋͆͘̚̕͘͘͘̚͘̕͠͠͠͠͝͠͝ͅͅ,̶̢̨̨̧̡̡̢̡̢̛̛̛̱͈̯͔͚͇̘͖̟̠̱̠̞̝͕̩͎̦̻̜̩̤̜̯̳͙͎̜͍̗̫̘̤̪͓̤͙̮̣̞͖̺̖̲̯̣̼͔̼̙͎̗̥̝͍̲̺͙̮͈̝̭͙̼̦̘̜̱̒͌̑̀̋̈̔̔̇͂̔͌̈͐̾̽͒͑͛͒̃̈́̽̆͌͑̒̊̅͌́͒̅̅̓͌̇̑͆̒̔̔͊̓͌́̽̏͑͊͋̐̍͑̀̈̋̓͑̋́̽̒̓̎̎̆͊͌͐́̿̅̉̋͊͗͌̈́̌̓̂͑͆̽͛̈̓̔̑͐̿͒̐̽̅̍̾͗͒̎̿͗̿͑̿̎́͛́̓̀̉̑́̅̉͌̃̾̋̈̆̔̄͂̐̆̐̓̓̒͊̌͋̈́̃̊̄͒͂͑̾̐͗̽̓͋͋̆̓̑̈́͛̔͌̉͑̈́̄́̄̐͑̈́̔͑͊̃̍̌̂̂͋͌̅̒̐̐̄̓̈́̐̋̏̑̑͊̀͒͋̀̌̍̿̈͒̈̅̿̉͆̑̍̓̚̕̚̚̚͘̕̚̚̕̚̚̚͜͜͝͝͠͠͝͠͠͝͝͝͝͠͝͠͝͝͝͠ͅ [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Dumper {
