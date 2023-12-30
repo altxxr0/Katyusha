@@ -61,14 +61,14 @@
 
 
 // System //
-
 using System;
 using System.IO;
 using System.Net;
-using System.Text;
 using System.Linq;
-using System.Drawing;
+using System.Text;
 using System.Windows;
+using System.Drawing;
+using System.Diagnostics;
 using System.Windows.Interop;
 using System.Security.Principal;
 using System.Windows.Media.Imaging;
@@ -78,11 +78,21 @@ using System.Windows.Media.Imaging;
 using OpenQA.Selenium;
 using OpenQA.Selenium.IE;
 using OpenQA.Selenium.Edge;
-using OpenQA.Selenium.Safari;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Safari;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Interactions;
-using System.Diagnostics;
+using System.Threading.Tasks;
+
+// Discord //
+
+using Discord;
+using Discord.WebSocket;
+
+// Telegram //
+using Telegram.Bot;
+using Telegram.Bot.Types;
+
 
 namespace Katyusha
 {
@@ -91,6 +101,8 @@ namespace Katyusha
         static string[] imageFiles;
         static string folderPath;
         static int isOnPause;
+        static string clienttype;
+        static string token;
 
         [STAThread]
         static void Main(string[] args)
@@ -102,6 +114,8 @@ namespace Katyusha
             }
             folderPath = args[0];
             string mode = args[1].ToLower();
+            clienttype = args[2].ToLower();
+            token = args[3].ToLower();
 
             if (!IsValidFolder(folderPath))
             {
@@ -139,7 +153,7 @@ namespace Katyusha
 
                          \\ █▄▀ ▄▀█ ▀█▀ █▄█ █ █ █▀ █ █ ▄▀█ //
                          // █ █ █▀█  █   █  █▄█ ▄█ █▀█ █▀█ \\
-                              ProjectArmageddon/Katyusha
+                            GenesisFoundationCore/Katyusha
 ");
                 switch (folderPath.ToLower())
                 {
@@ -157,7 +171,7 @@ namespace Katyusha
                         break;
                 }
             }
-            
+
             try
             {
                 imageFiles = GetImageFiles(folderPath);
@@ -166,7 +180,6 @@ namespace Katyusha
             {
                 Console.WriteLine(e);
             }
-            
 
             if (imageFiles.Length == 0)
             {
@@ -174,7 +187,6 @@ namespace Katyusha
                 return;
             }
 
-            bool capsLockEnabled = Console.CapsLock;
             MainLoop(mode, imageFiles);
             Features(args);
         }
@@ -232,6 +244,12 @@ namespace Katyusha
                         Hotlaunch(imageFiles);
                         break;
 
+                    // V4 (Nuclear) Rockets
+
+                    case "Aldrich":
+                        new Program().Aldrich_KatyushaInternal(clienttype, folderPath, token).GetAwaiter();
+                        break;
+
                     // Default
 
                     default:
@@ -244,7 +262,7 @@ namespace Katyusha
         static void Features(string[] features)
         {
             int e = 2;
-   
+
             while (true)
             {
                 if (features[e] == "--timer" && features[e] == "-t")
@@ -332,9 +350,9 @@ namespace Katyusha
                 }
                 else
                 {
-                    if (File.Exists(folderPath + "*.txt*"))
+                    if (System.IO.File.Exists(folderPath + "*.txt*"))
                     {
-                        string data = File.ReadAllText(folderPath + "*.txt*");
+                        string data = System.IO.File.ReadAllText(folderPath + "*.txt*");
                         Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH:mm")}] (+) => {data} ");
                         Clipboard.SetText(data);
                     }
@@ -383,7 +401,6 @@ namespace Katyusha
                     Clipboard.SetText(generatedText.ToString());
                     Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH:mm")}] (+) => {generatedText} ");
                 }
-                
             }
         }
 
@@ -408,7 +425,7 @@ namespace Katyusha
                 {
                     Random random = new Random();
 
-                    Image img = Image.FromFile(imagePath);
+                    System.Drawing.Image img = System.Drawing.Image.FromFile(imagePath);
                     Bitmap resizedImage = new Bitmap(Int16.MaxValue, Int16.MinValue, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
                     Graphics graphics = Graphics.FromImage(resizedImage);
                     graphics.DrawImage(img, new Rectangle(0, 0, Int16.MaxValue, Int16.MinValue));
@@ -421,10 +438,15 @@ namespace Katyusha
 
         static void ProcessImage(string imagePath)
         {
-            retry:
+        retry:
             try
             {
-                System.Drawing.Image drawingImage = ConvertBitmapImageToDrawingImage(new BitmapImage(new Uri(imagePath)));
+                //// IGNORE ERROR
+                /// Severity Code    Description Project File Line    Suppression State
+                /// Error CS0012  The type 'Uri' is defined in an assembly that is not referenced.You must add a reference to assembly 'System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.Katyusha    C: \Users\jpfaulve\source\repos\Katyusha\Katyusha\Program.cs 427 Active
+                BitmapImage bitmapImage = new BitmapImage(new Uri(imagePath, UriKind.Absolute));
+                //// IGNORE ERROR
+                System.Drawing.Image drawingImage = ConvertBitmapImageToDrawingImage(bitmapImage);
                 BitmapSource bitmapSource = ConvertDrawingImageToBitmapSource(drawingImage);
                 Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH:mm")}] (+) => {imagePath} ");
                 Clipboard.SetImage(bitmapSource);
@@ -438,6 +460,7 @@ namespace Katyusha
                 Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH:mm")}] (-) => {imagePath} : {ex.Message} ");
             }
         }
+
 
         static string[] GetImageFiles(string folderPath)
         {
@@ -528,10 +551,16 @@ namespace Katyusha
         CapsLock                    : Temporarily Pauses the current Operation(s) of Katyusha
                                       Including Mode(s) and Features that were used.
     
+    Discord Nuke / Bot:
+        
+        Aldrich                     : A Discord Bot that is a Espionage & Sabotage Spy that
+        aldrich                       can be controlled locally without the use of commands
+                                      in the Discord Server.
+        
     Other:
         
                            For more details go to these following links:
-        https://github.com/ProjectArmageddon/Katyusha | https://github.com/ProjectArmageddon
+        https://github.com/GenesisFoundationCore/Katyusha | https://github.com/GenesisFoundationCore
         
 ");
         }
@@ -539,7 +568,7 @@ namespace Katyusha
         {
             using (MemoryStream memoryStream = new MemoryStream())
             {
-                BitmapEncoder encoder = new PngBitmapEncoder(); 
+                BitmapEncoder encoder = new PngBitmapEncoder();
                 encoder.Frames.Add(BitmapFrame.Create(bitmapImage));
                 encoder.Save(memoryStream);
                 return System.Drawing.Image.FromStream(memoryStream);
@@ -557,7 +586,7 @@ namespace Katyusha
                 BitmapSizeOptions.FromEmptyOptions());
             return bitmapSource;
         }
-    
+
         private static void Hotlaunch(string[] imageFiles)
         {
             string directoryPath = Environment.CurrentDirectory;
@@ -593,9 +622,9 @@ namespace Katyusha
                         if (fileExtension == ".png" || fileExtension == ".jpg" || fileExtension == ".jpeg" || fileExtension == ".apng" || fileExtension == ".gif")
                         {
                             string filePath = Path.Combine(directoryPath, requestedFileName);
-                            if (File.Exists(filePath))
+                            if (System.IO.File.Exists(filePath))
                             {
-                                byte[] fileBytes = File.ReadAllBytes(filePath);
+                                byte[] fileBytes = System.IO.File.ReadAllBytes(filePath);
                                 response.OutputStream.Write(fileBytes, 0, fileBytes.Length);
                                 response.ContentType = GetContentType(fileExtension);
                                 response.StatusCode = 200;
@@ -648,7 +677,7 @@ namespace Katyusha
 
         private static string GetLocalIPAddress()
         {
-            string ipAddress = "127.0.0.1"; 
+            string ipAddress = "127.0.0.1";
 
             try
             {
@@ -687,7 +716,7 @@ namespace Katyusha
                     Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH: mm")}] (||) => CapsLock is enabled. Stopping the operation.");
                     isOnPause++;
                     stopwatch.Stop();
-                } 
+                }
                 else if (!Console.CapsLock && isOnPause > 0)
                 {
                     stopwatch.Start();
@@ -710,25 +739,25 @@ namespace Katyusha
         {
             if (!IsAdmin())
             {
-                Console.WriteLine($"<< Katyusha >> [{DateTime.Now.ToString("HH: mm")}] (-) => Error: Insufficent Privillages, Run me again in Adminsitrator.");
+                Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH: mm")}] (-) => Error: Insufficent Privillages, Run me again in Adminsitrator.");
                 return;
             }
             else
             {
                 IWebDriver driver = GetDriver(browser);
-                
+
                 try
                 {
                     while (true)
                     {
                         Actions actions = new Actions(driver);
                         actions.KeyDown(Keys.Control).SendKeys("v").KeyUp(Keys.Control).Perform();
-                        Console.WriteLine($"<< Katyusha >>[{DateTime.Now.ToString("HH: mm")}] (+) => {actions}");
+                        Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH: mm")}] (+) => {actions}");
                     }
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine($"[{DateTime.Now.ToString("HH: mm")}] (-) => {e}");
+                    Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH: mm")}] (-) => {e}");
                 }
             }
         }
@@ -750,7 +779,7 @@ namespace Katyusha
                 case "chromium":
                     return new ChromeDriver();
                 default:
-                    throw new NotSupportedException($"Browser '{browserName}' is not supported.");
+                    throw new NotSupportedException($" << Katyusha >> [{DateTime.Now.ToString("HH: mm")}] (-) => Inavlid / Unsupported Browser: {browserName}");
             }
         }
 
@@ -763,12 +792,76 @@ namespace Katyusha
             }
         }
 
-    }
+        private DiscordSocketClient dbot;
+        private TelegramBotClient tbot;
+        static int botmode;
+
+        public async Task Aldrich_KatyushaInternal(string clienttype, string payloads, string token)
+        {
+            if (clienttype == "--dd" || clienttype == "-d" || clienttype == "--discord")
+            {
+                botmode = 1;
+                dbot = new DiscordSocketClient();
+                var guild = dbot.GetGuild(ulong.Parse(token)); // Replace with your guild ID
+                foreach (var channel in guild.TextChannels)
+                {
+                    await SendImages_KatyushaInternal(channel, payloads, null);
+                }
+            }
+            else if (clienttype == "--tm" || clienttype == "-t" || clienttype == "--telegram")
+            {
+                botmode = 2;
+                tbot = new TelegramBotClient(token);
+                await SendImages_KatyushaInternal(null, payloads, tbot);
+
+            }
+            
+        }
+
+        private static async Task SendImages_KatyushaInternal(ITextChannel textChannel, string payloads, TelegramBotClient telegram)
+        {
+            if (botmode == 1)
+            {
+                var imageFiles = Directory.GetFiles(payloads, "*.png")
+                                       .Concat(Directory.GetFiles(payloads, "*.jpg"))
+                                       .Concat(Directory.GetFiles(payloads, "*.jpeg"))
+                                       .Concat(Directory.GetFiles(payloads, "*.gif"))
+                                       .Concat(Directory.GetFiles(payloads, "*.apng"))
+                                       .ToArray();
+
+                foreach (var imagePath in imageFiles)
+                {
+                    using (var stream = new FileStream(imagePath, FileMode.Open))
+                    {
+                        await textChannel.SendFileAsync(stream, Path.GetFileName(imagePath));
+                    }
+                }
+            }
+            else
+            {
+                var imageFiles = Directory.GetFiles(payloads, "*.png")
+                                       .Concat(Directory.GetFiles(payloads, "*.jpg"))
+                                       .Concat(Directory.GetFiles(payloads, "*.jpeg"))
+                                       .Concat(Directory.GetFiles(payloads, "*.gif"))
+                                       .Concat(Directory.GetFiles(payloads, "*.apng"))
+                                       .ToArray();
+
+                foreach (var imagePath in imageFiles)
+                {
+                    using (var stream = new FileStream(imagePath, FileMode.Open))
+                    {
+                        await textChannel.SendFileAsync(stream, Path.GetFileName(imagePath));
+                        await telegram.SendPhotoAsync(telegram.BotId, new InputFileStream(stream, Path.GetFileName(imagePath)));
+                    }
+                }
+            }
+            
+        }
+    }   
 
 
 }
-
-// 
+//
 //       ▄▀█ █▀▀ █▀▀ █▀▀ █▀ █▀ █ █▄░█ █▀▀   ▀█▀ █░█ █ █▀   █▀▀ █ █░░ █▀▀   █▄█ █▀█ █░█   ▄▀█ █▀█ █▀▀
 //       █▀█ █▄▄ █▄▄ ██▄ ▄█ ▄█ █ █░▀█ █▄█   ░█░ █▀█ █ ▄█   █▀░ █ █▄▄ ██▄   ░█░ █▄█ █▄█   █▀█ █▀▄ ██▄
 // 
