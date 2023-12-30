@@ -47,6 +47,8 @@ Katyusha, Multiple Payload DDoS Software, that uses images / gif files as Payloa
 Why is it [adfoc.us](http://adfoc.us/70081799483219)? This is so we can continue Developing Katyusha and Project Armageddon, Don't worry It's way Better than Linkvertise!
 But.. If you don't want to do that, You can Clone / Download the repository and Build the Application yourself if you don't like to wait,
 
+To Use Katyusha Launch **cmd.exe** and [cd (**Katyusha's Current Location**)] then [**Katyusha.exe** (Directory) (mode) (option)]
+
 #### Confused? Press the Skip Button in the Upper Right Corner (It is almost blended into the Background)
 
 |   Version-   |            File            |                               SHA256 Verification                               |
