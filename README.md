@@ -186,7 +186,7 @@ Katyusha can be used for raiding servers using images or if you want to be tradi
     Other:
         
                            For more details go to these following links:
-        https://github.com/ProjectArmageddon/Katyusha | https://github.com/ProjectArmageddon
+        https://github.com/GenesisFoundationCore/Katyusha | https://github.com/GenesisFoundationCore
         
 ```
 
