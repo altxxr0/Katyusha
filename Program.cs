@@ -535,7 +535,17 @@ namespace Katyusha
                                     [ This to prevent YOU from being DDoS'ed Because it uses   ]
                                     [ Your Local/Current IP, This needs to use your Public IP  ]
                                     [ to work.                                                 ] 
-                                    
+                               
+      Discord Nuke / Bot:
+        
+        Aldrich                     : A Discord Bot that is a Espionage & Sabotage Spy that
+        [directory] [mode] [options]  can be controlled locally without the use of commands
+        (c:\dir..) aldrich -d         in the Discord Server.
+        (c:\dir..) aldrich -t         
+        
+        -d / --discord / -dd        : Uses Discord Nuke Bot
+        -t / --telegram / -tm       : Uses Telegram Nuke Bot
+
     Features:                       
                                     
         --timer / -t                : Time limit of the Operation if you don't wan't it to run
@@ -551,11 +561,7 @@ namespace Katyusha
         CapsLock                    : Temporarily Pauses the current Operation(s) of Katyusha
                                       Including Mode(s) and Features that were used.
     
-    Discord Nuke / Bot:
-        
-        Aldrich                     : A Discord Bot that is a Espionage & Sabotage Spy that
-        aldrich                       can be controlled locally without the use of commands
-                                      in the Discord Server.
+
         
     Other:
         
