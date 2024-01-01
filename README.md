@@ -27,7 +27,7 @@
 
                          \\ █▄▀ ▄▀█ ▀█▀ █▄█ █ █ █▀ █ █ ▄▀█ //
                          // █ █ █▀█  █   █  █▄█ ▄█ █▀█ █▀█ \\
-
+			   GenesisFoundationCore / Katyusha
 ```
 
 ![GitHub issues](https://img.shields.io/github/issues/ProjectArmageddon/Katyusha?style=for-the-badge&color=red) ![GitHub closed issues](https://img.shields.io/github/issues-closed/ProjectArmageddon/Katyusha?style=for-the-badge) ![GitHub pull requests](https://img.shields.io/github/issues-pr/ProjectArmageddon/Katyusha?style=for-the-badge&color=orange) ![GitHub closed pull requests&color=red](https://img.shields.io/github/issues-pr-closed/ProjectArmageddon/Katyusha?style=for-the-badge&color=blue)
