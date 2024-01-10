@@ -35,18 +35,18 @@
 [![ProjectOffensive](https://github.com/GenesisFoundationCore/Katyusha/assets/153700938/fa8d6e2b-15b2-4bdb-bd72-a9a193e01d6c)](https://github.com/GenesisFoundationCore) [![KatyushaSourceForge](https://github.com/GenesisFoundationCore/Katyusha/assets/94430800/271d6014-0fd1-416b-94ce-219957daaaac)](https://sourceforge.net/projects/katyusha/)
 
 
-## Katyusha 🚙:
+## Katyusha 🚙
 Multiple Rocket Launcher System / Multiple Payload Launcher System
 
-## Description 📜:
+## Description 📜
 Katyusha, Multiple Payload DDoS Software, that uses images / gif files as Payloads in-order to flood a Group Chat / Discord Server with Messages and Images, Using Windows Clipboard it copies the "Payload" images to your clipboard so YOU don't have to.
 
-### Disclaimer ⚠:
+### Disclaimer ⚠
 **This software's intent varies as it is to benifit for both parties, and as such we are not responsible for any damages caused by User(s) / by Katyusha, as users are aware that it can be used for malicious intent and is only used for security purposes / educational purposes only.**
 
 --------------------------------
 
-## Download 🔻:
+## Download 🔻
 Why is it [adfoc.us](http://adfoc.us/?refid=700817)? This is so we can continue Developing Katyusha and Project Armageddon, Don't worry It's way Better than Linkvertise!
 But.. If you don't want to do that, You can Clone / Download the repository and Build the Application yourself if you don't like to wait,
 
@@ -66,10 +66,10 @@ To Use Katyusha Launch **cmd.exe** and cd (**Katyusha's Current Location**) then
 
 --------------------------------
 
-### Contribution 🤝:
+### Contribution 🤝
 Feel Free to contribute to the project, via [Pull Requests 🌿](https://github.com/ProjectArmageddon/Katyusha/pulls) or if you want a feature/idea you want to share to make Katyusha better use [Issues 🗣](https://github.com/ProjectArmageddon/Katyusha/issues).
 
-### License 📃:
+### License 📃
 
  █─▄▄▄─█─▄▄▄─███▄─▄─▀█▄─█─▄█▀▀▀▀▀██▄─▀█▄─▄█─▄▄▄─███░█░██████─▄▄─█
  █─███▀█─███▀████─▄─▀██▄─▄██████████─█▄▀─██─███▀███▄▄░██░░██─██─█
@@ -91,7 +91,7 @@ NonCommercial — You may not use the material for commercial purposes.
 
 No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
 
-### Credits 👏:
+### Credits 👏
   - Developers 🖥:
    	- [AnarchoUnidos](https://github.com/anarchounidos) : Original Developer | Developing and Creating the Original Katyusha, **(No longer active)**
    	- [Altxxr](https://github.com/Altxxr) : Developer | Maintaining and Continuing Katyusha **{ Project (Genesis) -> Armageddon }**
@@ -104,21 +104,21 @@ For Those who are wondering Katyusha is a Passed Down Project to me, and me and 
 
 **This orginization / project is not associated with the original Creator (AnarchoUnidos), About association with a Discord Server called "Lunkoy's German Army", If you have encountered this server it is most likely a Nazi Server, ran by a lunatic named lunkoy, This was said to me by Anarcho so I dont know, It's sounds bad, so I Think it 's proper to just avoid this type of server.**
 
-## Details 📋:
+## Details 📋
 It is proclaimed as a **Multiple Rocket Launcher System**, nicknamed by the Germans as the Stalin Organ, like Russia's MRLS Katyusha was designed to "demoralize" nearby units, but it has also inflicted a psychological effect both those who are targeted and those who operated it.
 
 Though it is Very Inaccurate for precise targets or even missing them, Katyusha's are easily deployable and be relocated with ease, easy to produce, and would be hell if their are multiple Katyusha's are used, due to poor precision the Katyusha is not able to penetrate covered areas, and can only hit exposed unit(s) / Infastructure only by chance, and can sometiems be easily be detectable.
 
-### About Katyusha ❔:
+### About Katyusha ❔
 Katyusha is a C# and an [Open Source (with a restrictive license)](https://github.com/ProjectArmageddon/Katyusha/blob/master/LICENSE) Project about the use of [System.Windows.Clipboard](https://learn.microsoft.com/en-us/dotnet/api/system.windows.clipboard?view=windowsdesktop-8.0) using the native Clipboard for Windows and actually give it a "real" use by using it as an Attack Vector to Servers such as Discord.
 
-### Why Katyusha ❔:
+### Why Katyusha ❔
 The idea of it came from most would "spam" discord servers with random or "insulting" text to servers, though it turned into sending random images partaining to the server's raiders, most likely to gain pouplarity or "clout" because this gives them ""Notoriety"" in the means of raiding and ruining servers.
 
-### Use of Katyusha ❕:
+### Use of Katyusha ❕
 Katyusha can be used for raiding servers using images or if you want to be traditional you can text, as Katyusha's real counterpart the Stalin's Organ used against Nazi Germany at the time in the battle of Stalingrad, though deem inaffective as time goes on, was improved at some time proving its affectivity, the use of katyusha is dependant on YOU the user on what Payload you will attack, It's either random **"images of not so safe material"** or most probably a meme that everybody makes "skibbidi-toilet" or whatever the case maybe, as this can be also be used maliciously I do not recommend doing it, as it could potentially traumatize the users affected by it, **Raiding is only for fun, not for destroying**, But as you know somebody out their may not follow this, so simply.. It's your Responsibily whether you like it or not.
 
-### Payloads 🚀:
+### Payloads 🚀
 ```
  << Katyusha >> 
     Usage: Katyusha.exe [directory] [mode] [options]
