@@ -70,13 +70,13 @@ To Use Katyusha Launch **cmd.exe** and `cd (Katyusha's Current Location)` then `
 Feel Free to contribute to the project, via [Pull Requests 🌿](https://github.com/ProjectArmageddon/Katyusha/pulls) or if you want a feature/idea you want to share to make Katyusha better use [Issues 🗣](https://github.com/ProjectArmageddon/Katyusha/issues).
 
 ### License 📃
-
+```
  █─▄▄▄─█─▄▄▄─███▄─▄─▀█▄─█─▄█▀▀▀▀▀██▄─▀█▄─▄█─▄▄▄─███░█░██████─▄▄─█
  █─███▀█─███▀████─▄─▀██▄─▄██████████─█▄▀─██─███▀███▄▄░██░░██─██─█
  ▀▄▄▄▄▄▀▄▄▄▄▄▀▀▀▄▄▄▄▀▀▀▄▄▄▀▀▀▀▀▀▀▀▀▄▄▄▀▀▄▄▀▄▄▄▄▄▀▀▀▀▄▄▄▀▄▄▀▀▄▄▄▄▀
 
- #### Attribution-NonCommercial 4.0 International
-```
+Attribution-NonCommercial 4.0 International
+
 You are free to:
 	
 Share — copy and redistribute the material in any medium or format
