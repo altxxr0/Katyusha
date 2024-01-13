@@ -69,7 +69,7 @@ To Use Katyusha Launch **cmd.exe** and `cd (Katyusha's Current Location)` then `
 --------------------------------
 
 ### Contribution 🤝
-Feel Free to contribute to the project, via [Pull Requests 🌿](https://github.com/ProjectArmageddon/Katyusha/pulls) or if you want a feature/idea you want to share to make Katyusha better use [Issues 🗣](https://github.com/ProjectArmageddon/Katyusha/issues).
+Feel Free to contribute to the project, via [Pull Requests 🌿](https://github.com/ProjectArmageddon/Katyusha/pulls) or if you want a feature/idea you want to share to make Katyusha better use [Discussions 💬](https://github.com/GenesisFoundationCore/Katyusha/discussions), If you have a Problem / Issue use [Issues 🗣](https://github.com/ProjectArmageddon/Katyusha/issues).
 
 ### License 📃
 ```
