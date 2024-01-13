@@ -76,7 +76,7 @@ Feel Free to contribute to the project, via [Pull Requests 🌿](https://github.
  ▀▄▄▄▄▄▀▄▄▄▄▄▀▀▀▄▄▄▄▀▀▀▄▄▄▀▀▀▀▀▀▀▀▀▄▄▄▀▀▄▄▀▄▄▄▄▄▀▀▀▀▄▄▄▀▄▄▀▀▄▄▄▄▀
 
  #### Attribution-NonCommercial 4.0 International
-
+```
 You are free to:
 	
 Share — copy and redistribute the material in any medium or format
@@ -90,6 +90,7 @@ Attribution — You must give appropriate credit , provide a link to the license
 NonCommercial — You may not use the material for commercial purposes.
 
 No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+```
 
 ### Credits 👏
   - Developers 🖥:
@@ -99,26 +100,7 @@ No additional restrictions — You may not apply legal terms or technological me
   - Special Thanks 🤍:
    	- [Lazygrinds](https://www.roblox.com/users/2835123653/profile) : For giving the ideas for the features, uses, and the suggestion for the name.
 
-### Other Information ℹ:
-For Those who are wondering Katyusha is a Passed Down Project to me, and me and [@JamAdventurer](https://github.com/jamadventurer) are Maintaining and Improving on Katyusha and Armageddon for the long term.
-
-**This orginization / project is not associated with the original Creator (AnarchoUnidos), About association with a Discord Server called "Lunkoy's German Army", If you have encountered this server it is most likely a Nazi Server, ran by a lunatic named lunkoy, This was said to me by Anarcho so I dont know, It's sounds bad, so I Think it 's proper to just avoid this type of server.**
-
-## Details 📋
-It is proclaimed as a **Multiple Rocket Launcher System**, nicknamed by the Germans as the Stalin Organ, like Russia's MRLS Katyusha was designed to "demoralize" nearby units, but it has also inflicted a psychological effect both those who are targeted and those who operated it.
-
-Though it is Very Inaccurate for precise targets or even missing them, Katyusha's are easily deployable and be relocated with ease, easy to produce, and would be hell if their are multiple Katyusha's are used, due to poor precision the Katyusha is not able to penetrate covered areas, and can only hit exposed unit(s) / Infastructure only by chance, and can sometiems be easily be detectable.
-
-### About Katyusha ❔
-Katyusha is a C# and an [Open Source (with a restrictive license)](https://github.com/ProjectArmageddon/Katyusha/blob/master/LICENSE) Project about the use of [System.Windows.Clipboard](https://learn.microsoft.com/en-us/dotnet/api/system.windows.clipboard?view=windowsdesktop-8.0) using the native Clipboard for Windows and actually give it a "real" use by using it as an Attack Vector to Servers such as Discord.
-
-### Why Katyusha ❔
-The idea of it came from most would "spam" discord servers with random or "insulting" text to servers, though it turned into sending random images partaining to the server's raiders, most likely to gain pouplarity or "clout" because this gives them ""Notoriety"" in the means of raiding and ruining servers.
-
-### Use of Katyusha ❕
-Katyusha can be used for raiding servers using images or if you want to be traditional you can text, as Katyusha's real counterpart the Stalin's Organ used against Nazi Germany at the time in the battle of Stalingrad, though deem inaffective as time goes on, was improved at some time proving its affectivity, the use of katyusha is dependant on YOU the user on what Payload you will attack, It's either random **"images of not so safe material"** or most probably a meme that everybody makes "skibbidi-toilet" or whatever the case maybe, as this can be also be used maliciously I do not recommend doing it, as it could potentially traumatize the users affected by it, **Raiding is only for fun, not for destroying**, But as you know somebody out their may not follow this, so simply.. It's your Responsibily whether you like it or not.
-
-### Payloads 🚀
+### Payloads & Usage 🚀
 ```
  << Katyusha >> 
     Usage: Katyusha.exe [directory] [mode] [options]
@@ -196,6 +178,26 @@ Katyusha can be used for raiding servers using images or if you want to be tradi
         https://github.com/GenesisFoundationCore/Katyusha | https://github.com/GenesisFoundationCore
         
 ```
+
+
+### Other Information ℹ
+For Those who are wondering Katyusha is a Passed Down Project to me, and me and [@JamAdventurer](https://github.com/jamadventurer) are Maintaining and Improving on Katyusha and Armageddon for the long term.
+
+**This orginization / project is not associated with the original Creator (AnarchoUnidos), About association with a Discord Server called "Lunkoy's German Army", If you have encountered this server it is most likely a Nazi Server, ran by a lunatic named lunkoy, This was said to me by Anarcho so I dont know, It's sounds bad, so I Think it 's proper to just avoid this type of server.**
+
+## Details 📋
+It is proclaimed as a **Multiple Rocket Launcher System**, nicknamed by the Germans as the Stalin Organ, like Russia's MRLS Katyusha was designed to "demoralize" nearby units, but it has also inflicted a psychological effect both those who are targeted and those who operated it.
+
+Though it is Very Inaccurate for precise targets or even missing them, Katyusha's are easily deployable and be relocated with ease, easy to produce, and would be hell if their are multiple Katyusha's are used, due to poor precision the Katyusha is not able to penetrate covered areas, and can only hit exposed unit(s) / Infastructure only by chance, and can sometiems be easily be detectable.
+
+### About Katyusha ❔
+Katyusha is a C# and an [Open Source (with a restrictive license)](https://github.com/ProjectArmageddon/Katyusha/blob/master/LICENSE) Project about the use of [System.Windows.Clipboard](https://learn.microsoft.com/en-us/dotnet/api/system.windows.clipboard?view=windowsdesktop-8.0) using the native Clipboard for Windows and actually give it a "real" use by using it as an Attack Vector to Servers such as Discord.
+
+### Why Katyusha 🔲❔
+The idea of it came from most would "spam" discord servers with random or "insulting" text to servers, though it turned into sending random images partaining to the server's raiders, most likely to gain pouplarity or "clout" because this gives them ""Notoriety"" in the means of raiding and ruining servers.
+
+### Use of Katyusha ❕
+Katyusha can be used for raiding servers using images or if you want to be traditional you can text, as Katyusha's real counterpart the Stalin's Organ used against Nazi Germany at the time in the battle of Stalingrad, though deem inaffective as time goes on, was improved at some time proving its affectivity, the use of katyusha is dependant on YOU the user on what Payload you will attack, It's either random **"images of not so safe material"** or most probably a meme that everybody makes "skibbidi-toilet" or whatever the case maybe, as this can be also be used maliciously I do not recommend doing it, as it could potentially traumatize the users affected by it, **Raiding is only for fun, not for destroying**, But as you know somebody out their may not follow this, so simply.. It's your Responsibily whether you like it or not.
 
 
 
