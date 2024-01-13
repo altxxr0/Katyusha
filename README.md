@@ -43,8 +43,8 @@ Multiple Rocket Launcher System / Multiple Payload Launcher System
 
 --------------------------------
 
-### Disclaimer ⚠
-#### This software's intent varies as it is to benifit for both parties, and as such we are not responsible for any damages caused by User(s) / by Katyusha, as users are aware that it can be used for malicious intent and is only used for security purposes / educational purposes only.
+## Disclaimer ⚠
+### This software's intent varies as it is to benifit for both parties, and as such we are not responsible for any damages caused by User(s) / by Katyusha, as users are aware that it can be used for malicious intent and is only used for security purposes / educational purposes only.
 
 --------------------------------
 
