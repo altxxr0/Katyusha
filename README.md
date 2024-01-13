@@ -39,7 +39,7 @@
 Multiple Rocket Launcher System / Multiple Payload Launcher System
 
 ## Description 📜
-#### Katyusha, Multiple Payload DDoS Software, that uses images / gif files as Payloads in-order to flood a Group Chat / Discord Server with Messages and Images, Using Windows Clipboard it copies the "Payload" images to your clipboard so YOU don't have to.
+**Katyusha, Multiple Payload DDoS Software, that uses images / gif files as Payloads in-order to flood a Group Chat / Discord Server with Messages and Images, Using Windows Clipboard it copies the "Payload" images to your clipboard so YOU don't have to.**
 
 --------------------------------
 
